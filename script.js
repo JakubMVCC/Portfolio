@@ -879,7 +879,7 @@ function showItemDetails(itemId) {
             // It's a local video file
             mediaHtml = `
                 <div class="video-container mb-4">
-                    <video controls autoplay class="w-full h-full rounded-lg bg-black">
+                    <video controls autoplay class="absolute top-0 left-0 w-full h-full rounded-lg bg-black">
                         <source src="${item.localVideo}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
