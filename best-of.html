@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakub - Videos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { background-color: #000000; }
+        body { font-family: 'Inter', sans-serif; background-color: #000000; color: #E5E7EB; }
+        .nav-link { transition: color 0.3s, border-bottom-color 0.3s; border-bottom: 2px solid transparent; padding-bottom: 4px; }
+        .nav-link:hover { color: #81268F; }
+        .nav-link.active { color: #81268F; border-bottom-color: #81268F; font-weight: 600; }
+        .card { background-color: #111827; }
+        .card.filtered-out { opacity: 0.2; filter: grayscale(1); pointer-events: none; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2), 0 4px 6px -2px rgba(129, 38, 143, 0.1); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #111827; }
+        ::-webkit-scrollbar-thumb { background: #81268F; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #6b2176; }
+        .header-search-bar { background-color: #111827; border: 1px solid #374151; }
+        #main-title:hover { color: #81268F; transition: color 0.3s; }
+        #filter-status-container { top: 80px; } 
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen antialiased bg-black">
+
+    <!-- Header and Navigation -->
+     <header class="bg-black/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg" style="--tw-shadow-color: #81268F; --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center h-[80px]">
+            <a href="index.html" id="main-title" class="text-xl font-bold text-white shrink-0">Jakub's Video & Graphic Portfolio</a>
+            <div class="hidden md:flex items-center space-x-4 ml-auto">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="best-of.html" class="nav-link active">Videos</a>
+                <a href="graphics.html" class="nav-link">Graphic Design</a>
+                <a href="websites.html" class="nav-link">Other</a>
+                <form class="header-search-form" role="search">
+                    <input type="search" list="search-suggestions" placeholder="Search..." class="header-search-bar w-40 px-3 py-1.5 rounded-lg text-sm focus:ring-2 focus:ring-[#81268F] focus:border-[#81268F] outline-none transition">
+                    <datalist id="search-suggestions"></datalist>
+                </form>
+                <button id="random-btn" class="bg-[#81268F] hover:bg-[#6b2176] text-white font-semibold py-2 px-4 rounded-lg transition-transform transform hover:scale-105 shrink-0">
+                    Random
+                </button>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white ml-4">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="block nav-link">Home</a>
+            <a href="about.html" class="block nav-link">About Me</a>
+            <a href="best-of.html" class="block nav-link active">Videos</a>
+            <a href="graphics.html" class="block nav-link">Graphic Design</a>
+            <a href="websites.html" class="block nav-link">Other</a>
+            <form class="header-search-form mt-2" role="search">
+                 <input type="search" list="search-suggestions-mobile" placeholder="Search..." class="header-search-bar w-full px-3 py-2 rounded-lg text-sm focus:ring-2 focus:ring-[#81268F] focus:border-[#81268F] outline-none transition">
+                 <datalist id="search-suggestions-mobile"></datalist>
+            </form>
+            <button id="random-btn-mobile" class="w-full text-left bg-[#81268F] hover:bg-[#6b2176] text-white font-semibold py-2 px-4 rounded-lg transition-transform transform hover:scale-105 mt-2">
+                Random
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-12">
+        <section>
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4" style="color: #c084fc;">Best Of: Video Work</h1>
+                <p class="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed">
+                    Here you’ll find a curated collection from some of my favorite projects. Each one represents a unique creative challenge that I’ve enjoyed bringing to life throughout the years.
+                </p>
+            </div>
+
+            <!-- Sticky Filter Status Container -->
+            <div id="filter-status-container" class="sticky z-40 bg-black/80 backdrop-blur-sm p-4 rounded-lg my-8 hidden text-center"></div>
+            
+            <div id="video-gallery" class="gallery-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Video cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 border-t border-gray-800 text-gray-500 text-sm">
+        &copy; 2025 Jakub. All Rights Reserved.
+    </footer>
+
+    <!-- Modal -->
+    <div id="item-modal" class="fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm flex items-center justify-center p-4 z-[100] hidden">
+        <div id="modal-content" class="bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto p-6 relative shadow-2xl" style="box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2), 0 4px 6px -2px rgba(129, 38, 143, 0.1);"></div>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-[#81268F] hover:bg-[#6b2176] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 opacity-0 invisible z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
