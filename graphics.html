@@ -12,7 +12,7 @@
         .nav-link { transition: color 0.3s, border-bottom-color 0.3s; border-bottom: 2px solid transparent; padding-bottom: 4px; }
         .nav-link:hover { color: #81268F; }
         .nav-link.active { color: #81268F; border-bottom-color: #81268F; font-weight: 600; }
-        .card { background-color: #111827; }
+        .card { background-color: #111827; break-inside: avoid; margin-bottom: 2rem; }
         .card.filtered-out { opacity: 0.2; filter: grayscale(1); pointer-events: none; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2), 0 4px 6px -2px rgba(129, 38, 143, 0.1); }
         ::-webkit-scrollbar { width: 8px; }
@@ -36,12 +36,22 @@
             width: 100%;
             height: 100%;
         }
+        /* Masonry Layout */
+        #graphic-gallery {
+            column-gap: 2rem;
+            column-count: 1;
+        }
+        @media (min-width: 768px) {
+            #graphic-gallery { column-count: 2; }
+        }
+        @media (min-width: 1024px) {
+            #graphic-gallery { column-count: 3; }
+        }
     </style>
 </head>
 <body class="flex flex-col min-h-screen antialiased bg-black">
 
-    <!-- Header and Navigation -->
-     <header class="bg-black/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg" style="--tw-shadow-color: #81268F; --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);">
+    <header class="bg-black/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg" style="--tw-shadow-color: #81268F; --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center h-[80px]">
             <a href="index.html" id="main-title" class="text-xl font-bold text-white shrink-0">Jakub's Video & Graphic Portfolio</a>
             <div class="hidden md:flex items-center space-x-4 ml-auto">
@@ -64,7 +74,6 @@
                 </svg>
             </button>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="index.html" class="block nav-link">Home</a>
             <a href="about.html" class="block nav-link">About Me</a>
@@ -81,36 +90,30 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="flex-grow container mx-auto px-6 py-12">
         <section>
             <div class="text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4" style="color: #c084fc;">Graphic Design</h1>
                 <p class="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed">
-                    This gallery contains a sample of my design work. From posters to logos, these pieces reflect my passion for creating clean, impactful visuals that communicate a clear message.
+                    This gallery contains some examples of my design work throughout the years. From posters to pixel art, these pieces reflect my passion for creating fun, impactful visuals regardless of the program or device.
                 </p>
             </div>
             
-            <!-- Sticky Filter Status Container -->
             <div id="filter-status-container" class="sticky z-40 bg-black/80 backdrop-blur-sm p-4 rounded-lg my-8 hidden text-center"></div>
 
-            <div id="graphic-gallery" class="gallery-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                <!-- Graphic cards will be dynamically inserted here -->
-            </div>
+            <div id="graphic-gallery" class="gallery-grid mt-12">
+                </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="text-center py-6 border-t border-gray-800 text-gray-500 text-sm">
         &copy; 2025 Jakub. All Rights Reserved.
     </footer>
 
-    <!-- Modal -->
     <div id="item-modal" class="fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm flex items-center justify-center p-4 z-[100] hidden">
         <div id="modal-content" class="bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto p-6 relative shadow-2xl" style="box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2), 0 4px 6px -2px rgba(129, 38, 143, 0.1);"></div>
     </div>
     
-    <!-- Scroll to Top Button -->
     <button id="scroll-to-top" onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-[#81268F] hover:bg-[#6b2176] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 opacity-0 invisible z-50">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
     </button>
@@ -118,4 +121,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
