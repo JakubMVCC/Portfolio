@@ -77,7 +77,7 @@ const portfolioItems = [
         type: 'video',
         title: 'Splatter Head | A Claymation Short Film',
         year: 2024,
-        localVideo: 'extra/SplatterHead.mp4', // Updated file path
+        localVideo: 'extra/SplatterHead.mp4',
         imageUrl: 'https://i.imgur.com/0vGZaBi.png',
         tags: ['After Effects', 'Animation', 'Claymation', 'Illustrator', 'Motion Graphics', 'Premiere Pro', 'Stop Motion', 'Storyboarding', 'Visual Effects'],
         description: "Even though still unfinished, Splatter Head showcases my skills in storytelling with a variety of different formats such as Stop Motion and Animation. Originally created for my Premiere Pro class Final Project at Moraine but has since been used as my Finals for my Adobe Creative Suite, Website Development, and After Effects classes too."
@@ -253,7 +253,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Deku Link Miiverse Illustration',
         year: 2013,
-        imageUrl: 'https://i.imgur.com/xPw6FsV.jpeg',
+        imageUrl: 'https://i.imgur.com/Pp00VBi.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "This digital illustration of Deku Link from The Legend of Zelda: Majora's Mask was created using the unique and restrictive tools of the Nintendo Wii U Gamepad and its Miiverse application. Every line was drawn by hand on the gamepad's screen, resulting in a distinct pixel art style that reflects the limitations and charm of the platform."
     },
@@ -271,7 +271,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Alice Cooper "He\'s Back" Miiverse Illustration',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/CX7OW68.png',
+        imageUrl: 'https://i.imgur.com/B0DnmcG.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "This illustration, featuring rock icon Alice Cooper with the Jason Voorhees mask from Friday the 13th: Part VI, was drawn entirely by hand on a Nintendo Wii U Gamepad. Created within the restrictive pixel art environment of the Miiverse application, the piece captures a detailed likeness using only the platform's basic tools."
     },
@@ -280,7 +280,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Shenron Miiverse Drawing',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/PeaDL7m.jpeg',
+        imageUrl: 'https://i.imgur.com/h3QXbJA.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "As a huge Dragon Ball fan, I really wanted to challenge myself by recreating the mighty Shenron. This was drawn entirely by hand on the Wii U Gamepad using the Miiverse app. It was a real test of patience to get all those details right with just the simple pixel tools, but I'm really happy with how the powerful look of the eternal dragon came through."
     },
@@ -289,7 +289,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Sailor Moon Miiverse Drawing',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/7eHNYpf.jpeg',
+        imageUrl: 'https://i.imgur.com/do8s0Lz.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "I've always loved the art style of Sailor Moon, so I wanted to see if I could capture Usagi's classic look on the Wii U. This was drawn completely by hand on the gamepad for the Miiverse app. It was a fun challenge to recreate her expressive features and iconic hairstyle using only the simple black and white pixel tools available on the platform."
     },
@@ -298,7 +298,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'A Link Between Worlds Miiverse Drawing',
         year: 2013,
-        imageUrl: 'https://i.imgur.com/xJb8Yri.jpeg',
+        imageUrl: 'https://i.imgur.com/UcK5cEw.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "As a big Zelda fan, I really enjoyed tackling this piece from A Link Between Worlds. I drew this entirely by hand on the Wii U Gamepad using the Miiverse app's simple tools. It was a fun challenge to recreate the details of Link's gear, like the Master Sword and Hylian Shield, in that classic pixelated style."
     },
@@ -316,7 +316,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Bowser & Vegeta | Miiverse Doodle',
         year: 2015,
-        imageUrl: 'https://i.imgur.com/nyu8kdb.jpeg',
+        imageUrl: 'https://i.imgur.com/TNU4ssH.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "After finally conquering a brutal Super Mario Maker level, I felt like I needed to draw something to celebrate my victory. I was watching a lot of Dragon Ball Z at the time, so the idea to fuse Bowser with Vegeta just made perfect sense to capture that \"Over 9000\" intensity. This was a really fun piece to create entirely by hand on the Wii U Gamepad for Miiverse."
     },
@@ -325,7 +325,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'EarthBound Miiverse Drawing',
         year: 2015,
-        imageUrl: 'https://i.imgur.com/cfqq7gw.jpeg',
+        imageUrl: 'https://i.imgur.com/3QPoPVB.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "EarthBound is one of my all time favorite games, and I wanted to capture that feeling of victory and friendship from the end of the story. I drew this piece entirely by hand on the Wii U Gamepad using the Miiverse app. Getting all four heroes: Ness, Paula, Jeff, and Poo with the simple pixel art tools, especially adding the color, was a really rewarding challenge."
     },
@@ -343,7 +343,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Donkey Kong Digital Illustration',
         year: 2023,
-        imageUrl: 'https://i.imgur.com/CtFznfv.jpeg',
+        imageUrl: 'https://i.imgur.com/mkYibyh.png',
         tags: ['Character Art', 'Digital Illustration', 'Drawing Tablet', 'Fan Art', 'Krita'],
         description: "This digital illustration of Nintendo's Donkey Kong was created in Krita using a drawing tablet. The process involved building up the character from a foundational sketch, followed by clean line art and flat color application. Simple shading and highlights were then added to give the character depth and bring the energetic pose to life."
     },
@@ -523,7 +523,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Sephiroth Miiverse Drawing',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/InOVwuM.jpeg',
+        imageUrl: 'https://i.imgur.com/T5aasbI.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "As my favorite villain and the character that got me into RPGs, I had to do a tribute to Sephiroth. I created this portrait entirely by hand on the Wii U Gamepad using the Miiverse application. It was a great challenge trying to capture his intimidating presence and iconic flowing hair with the simple black and white pixel art tools of the platform."
     },
@@ -532,7 +532,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Bobobo-bo Bo-bobo Miiverse Drawing',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/XnPMgOz.jpeg',
+        imageUrl: 'https://i.imgur.com/c2CTKTH.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "Watching Toonami growing up, Bobobo-bo Bo-bobo was one of those wild shows I'll never forget. I wanted to capture his iconic look, so I drew this piece completely by hand on the Wii U Gamepad using the Miiverse app. Getting his signature nose hairs and stern expression right with just the gamepad was difficult."
     },
@@ -541,7 +541,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Mega Man X & Zero Miiverse Drawing',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/IyTTjiv.jpeg',
+        imageUrl: 'https://i.imgur.com/57IekyC.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "I'm a huge fan of the Mega Man X series, and I really wanted to capture the partnership between X and Zero. This piece was drawn entirely by hand on the Wii U Gamepad using the Miiverse app."
     },
@@ -550,7 +550,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Link & Epona (Ocarina of Time) Miiverse Doodle',
         year: 2013,
-        imageUrl: 'https://i.imgur.com/qmwOoel.jpeg',
+        imageUrl: 'https://i.imgur.com/NMNJCFh.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "Ocarina of Time is such a legendary game, and I wanted to capture that classic feeling of adventure with Link and Epona. I drew this scene entirely by hand on the Wii U Gamepad for the Miiverse app."
     },
@@ -559,7 +559,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Helmaroc King (Wind Waker) Miiverse Doodle',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/WeKEiSl.jpeg',
+        imageUrl: 'https://i.imgur.com/sJqyhHD.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "The Wind Waker has such a unique art style, and I wanted to do justice to the imposing Helmaroc King. I drew this completely by hand on the Wii U Gamepad within the Miiverse app. Capturing the detail of its mask and the texture of its feathers was a fantastic challenge, and a lot of fun to work on."
     },
@@ -568,7 +568,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'See You Next Mission: A Miiverse Farewell',
         year: 2017,
-        imageUrl: 'https://i.imgur.com/9TlCaWk.png',
+        imageUrl: 'https://i.imgur.com/O2acsTj.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "This piece was my final drawing for Miiverse before Nintendo shut the service down in 2017. Over four years, I logged more than 600 hours drawing on my Wii U Gamepad, and I wanted to create something special to say goodbye. This mashup of Tingle and Samus Aran's Varia Suit represents all the fun and creativity I had on the platform, and it's a tribute to the wonderful community we lost."
     },
@@ -577,7 +577,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Zora (Majora\'s Mask) Miiverse Doodle',
         year: 2013,
-        imageUrl: 'https://i.imgur.com/O66bBjl.jpeg',
+        imageUrl: 'https://i.imgur.com/fsc0B0x.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "The Zora form in Majora's Mask has such a sleek and cool design. I wanted to capture that look in this piece, which I drew completely by hand on the Wii U Gamepad for the Miiverse app."
     },
@@ -586,7 +586,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Wobbuffet (Pokemon) Miiverse Doodle',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/IujLgT3.jpeg',
+        imageUrl: 'https://i.imgur.com/dPv3ehN.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "I just had to draw one of Pokémon's funniest characters, Wobbuffet. I created this piece entirely by hand on the Wii U Gamepad for Miiverse."
     },
@@ -595,7 +595,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Mojo Jojo (PowerPuff Girls) Miiverse Doodle',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/PTLuq7J.jpeg',
+        imageUrl: 'https://i.imgur.com/hcQ5O1K.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "Growing up with The PowerPuff Girls, I couldn't resist drawing the iconic villain Mojo Jojo. This was all done by hand on the Wii U Gamepad for the Miiverse app. I had a blast trying to capture his menacing glare and oversized brain with just the simple drawing tools."
     },
@@ -604,7 +604,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Ultros (Final Fantasy VI) Miiverse Doodle',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/uPFtTnp.jpeg',
+        imageUrl: 'https://i.imgur.com/Zdc5HhB.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "I've always loved the villains from Final Fantasy VI, and the goofy but persistent Ultros is a classic. This was all drawn by hand on the Wii U Gamepad for the Miiverse app. It was a lot of fun trying to capture his personality and the detail of his tentacles using the gamepad."
     },
@@ -613,7 +613,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Darbus (Twilight Princess) Miiverse Doodle',
         year: 2013,
-        imageUrl: 'https://i.imgur.com/sRTBfPi.jpeg',
+        imageUrl: 'https://i.imgur.com/MQtRvH7.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "I've always been a fan of the Gorons, and the transformed Darbus from Twilight Princess has such a cool, intimidating design. This was drawn completely by hand on the Wii U's Gamepad for the Miiverse community."
     },
@@ -622,7 +622,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Ganon (Twilight Princess) Miiverse Doodle',
         year: 2013,
-        imageUrl: 'https://i.imgur.com/5Mk0B70.png',
+        imageUrl: 'https://i.imgur.com/WWCWs68.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "The Twilight Princess version of Ganon is one of his most monstrous forms, and I really wanted to capture that raw power. I created this piece entirely by hand on the Wii U Gamepad for Miiverse."
     },
@@ -631,7 +631,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Gleeok (The Legend Of Zelda) Miiverse Doodle',
         year: 2013,
-        imageUrl: 'https://i.imgur.com/CCS1qqZ.jpeg',
+        imageUrl: 'https://i.imgur.com/H0jkO5a.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "I decided to tackle one of the classic bosses from the original Legend of Zelda, the multi headed dragon Gleeok. This was a really intricate piece to create by hand on the Wii U Gamepad for Miiverse. It took a lot of patience to get all the scales and sharp details just right using the simple pixel art tools, but I'm proud of how ferocious it turned out."
     },
@@ -640,7 +640,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Skull Kid (Majora\'s Mask) Miiverse Doodle',
         year: 2013,
-        imageUrl: 'https://i.imgur.com/UdiQ35i.jpeg',
+        imageUrl: 'https://i.imgur.com/tC5htzY.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "Majora's Mask has some of the most memorable character designs, and I really wanted to capture the mysterious and chaotic energy of Skull Kid. This was drawn completely by hand on the Wii U Gamepad for the Miiverse app. It was a really intricate piece to work on, especially trying to get all the details of Majora's Mask right using the platform's pixelated style."
     },
@@ -649,7 +649,7 @@ const portfolioItems = [
         type: 'graphic',
         title: 'Egg of the King (Berserk) Miiverse Doodle',
         year: 2014,
-        imageUrl: 'https://i.imgur.com/zKOf1xG.png',
+        imageUrl: 'https://i.imgur.com/H1XcpsI.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
         description: "Berserk has some of the most haunting imagery in all of manga, and the Behelit, or the Egg of the King, is unforgettable. I wanted to see if I could recreate its creepy, detailed face, so I drew this entirely by hand on the Wii U Gamepad for Miiverse."
     }
@@ -676,19 +676,19 @@ const scrollToTopBtn = document.getElementById('scroll-to-top');
 // --- RENDER GALLERIES ---
 function createCard(item) {
     const isVideo = item.type === 'video';
-    // Use a fallback image for videos that might be missing one
+    // Use a fallback image for items that might be missing one
     const displayImageUrl = item.imageUrl || (isVideo ? `https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg` : 'https://placehold.co/800x600/111827/c084fc?text=No+Image');
 
     const tagsString = item.tags.join(','); 
 
     const tagsHtml = item.tags.map(tag => 
-        `<button onclick="toggleFilter('${tag}', this)" class="tag-btn bg-gray-800 text-sm font-semibold px-3 py-1 rounded-full transition hover:bg-[#81268F]" style="color: #e9d5ff;">#${tag}</button>`
+        `<button onclick="toggleFilter('${tag}', event)" class="tag-btn bg-gray-800 text-sm font-semibold px-3 py-1 rounded-full transition hover:bg-[#81268F]" style="color: #e9d5ff;">#${tag}</button>`
     ).join('');
 
     return `
-        <div class="card rounded-lg overflow-hidden transition-all duration-300 group" data-tags="${tagsString}" data-item-id="${item.id}" onclick="showItemDetails(${item.id})">
+        <div class="card rounded-lg overflow-hidden transition-all duration-300 group" data-tags="${tagsString}" data-item-id="${item.id}" onclick="showItemDetails(${item.id}, event)">
             <div class="relative aspect-w-16 aspect-h-9 bg-black overflow-hidden">
-                <img src="${displayImageUrl}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                <img src="${displayImageUrl}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                 ${isVideo ? `<div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-80" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>
                 </div>` : ''}
@@ -714,14 +714,16 @@ function renderGalleries() {
     }
     if (graphicGallery) {
         const graphicItems = portfolioItems.filter(item => item.type === 'graphic');
-        // Randomize the order of graphic items
+        // Randomize the order of graphic items for visual interest
         const shuffledGraphics = graphicItems.sort(() => Math.random() - 0.5);
         graphicGallery.innerHTML = shuffledGraphics.map(createCard).join('');
     }
 }
 
 // --- MULTI-TAG FILTERING ---
-function toggleFilter(tag, element) {
+function toggleFilter(tag, event) {
+    event.stopPropagation(); // Prevent modal from opening
+    const element = event.currentTarget;
     const gallery = element.closest('main').querySelector('.gallery-grid');
     
     const tagIndex = activeFilters.indexOf(tag);
@@ -781,13 +783,15 @@ function applyFilters(gallery) {
         }
     });
 
-    const allTagButtons = gallery.querySelectorAll('.tag-btn');
-    allTagButtons.forEach(btn => {
+    // Update all tag buttons on the page to reflect active filters
+    document.querySelectorAll('.tag-btn').forEach(btn => {
         const tag = btn.innerText.replace('#', '');
         if (activeFilters.includes(tag)) {
             btn.classList.add('bg-[#81268F]');
+            btn.classList.remove('bg-gray-800');
         } else {
             btn.classList.remove('bg-[#81268F]');
+            btn.classList.add('bg-gray-800');
         }
     });
 }
@@ -861,88 +865,125 @@ function renderSearchResults() {
     }
 }
 
-// --- MODAL FUNCTIONALITY with PREV/NEXT ---
-function showItemDetails(itemId) {
+// --- MODAL FUNCTIONALITY ---
+// Helper to load an image and get its dimensions
+function getImageDimensions(url) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve({ width: img.naturalWidth, height: img.naturalHeight });
+        img.onerror = (err) => reject(err);
+        img.src = url;
+    });
+}
+
+async function showItemDetails(itemId, event) {
     const item = portfolioItems.find(p => p.id === itemId);
     if (!item) return;
 
-    if (event.target.closest('.tag-btn')) {
-        event.stopPropagation();
+    if (event && event.target.closest('.tag-btn')) {
         return;
     }
     
     currentModalItemId = itemId;
     
-    let mediaHtml = '';
-    if (item.type === 'video') {
-        if (item.localVideo) {
-            // It's a local video file
-            mediaHtml = `
-                <div class="video-container mb-4">
-                    <video controls autoplay class="absolute top-0 left-0 w-full h-full rounded-lg bg-black">
-                        <source src="${item.localVideo}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>`;
-        } else {
-            // It's a YouTube video
-            mediaHtml = `
-                <div class="video-container mb-4">
-                    <iframe src="https://www.youtube.com/embed/${item.youtubeId}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-lg"></iframe>
-                </div>`;
-        }
-    } else {
-        // It's a graphic
-        mediaHtml = `<img src="${item.imageUrl}" alt="${item.title}" class="w-full h-auto rounded-lg mb-4">`;
-    }
-    
+    modalContent.innerHTML = `<div class="flex justify-center items-center h-full"><div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-[#81268F]"></div></div>`;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+
     const tagsHtml = item.tags.map(tag => 
         `<a href="search.html?tag=${encodeURIComponent(tag)}" class="bg-gray-800 text-sm font-semibold px-3 py-1 rounded-full transition hover:bg-[#81268F]" style="color: #e9d5ff;">#${tag}</a>`
     ).join('');
 
-    modalContent.innerHTML = `
-        <button onclick="showPreviousItem()" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 text-white p-2 rounded-full bg-black/50 hover:bg-black/80 transition z-20">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-        </button>
-        <button onclick="showNextItem()" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 text-white p-2 rounded-full bg-black/50 hover:bg-black/80 transition z-20">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-        </button>
-        <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition z-10">
-            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-        </button>
-        ${mediaHtml}
-        <h2 class="text-3xl font-bold mb-2" style="color: #c084fc;">${item.title}</h2>
-        <p class="text-md text-gray-400 mb-4">${item.year}</p>
-        <p class="text-gray-300 mb-6">${item.description}</p>
-        <div class="flex flex-wrap gap-2">${tagsHtml}</div>
-    `;
-    modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
+    let finalHtml = '';
+
+    if (item.type === 'video') {
+        modalContent.classList.remove('max-w-6xl');
+        modalContent.classList.add('max-w-4xl');
+
+        let mediaHtml = '';
+        if (item.localVideo) {
+            mediaHtml = `<div class="video-container mb-4"><video controls autoplay class="absolute top-0 left-0 w-full h-full rounded-lg bg-black"><source src="${item.localVideo}" type="video/mp4"></video></div>`;
+        } else {
+            mediaHtml = `<div class="video-container mb-4"><iframe src="https://www.youtube.com/embed/${item.youtubeId}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-lg"></iframe></div>`;
+        }
+        
+        finalHtml = `
+            <div>
+                ${mediaHtml}
+                <div class="flex-shrink-0 text-left mt-4">
+                    <h2 class="text-2xl lg:text-3xl font-bold mb-2" style="color: #c084fc;">${item.title}</h2>
+                    <p class="text-md text-gray-400 mb-4">${item.year}</p>
+                    <p class="text-gray-300 mb-6">${item.description}</p>
+                    <div class="flex flex-wrap gap-2">${tagsHtml}</div>
+                </div>
+            </div>`;
+
+    } else { // It's a graphic
+        try {
+            const { width, height } = await getImageDimensions(item.imageUrl);
+            const forceSideBySide = [37, 42, 40, 53];
+            let useSideBySide = (height >= width) || forceSideBySide.includes(item.id);
+
+            const generateLayout = (isSideBySide) => {
+                if (isSideBySide) {
+                    modalContent.classList.remove('max-w-4xl');
+                    modalContent.classList.add('max-w-6xl');
+                    return `
+                        <div class="md:grid md:grid-cols-2 md:gap-8 items-stretch h-full">
+                            <div class="flex items-center mb-4 md:mb-0">
+                                <div class="flex justify-center items-center h-full w-full bg-black rounded-lg">
+                                    <img src="${item.imageUrl}" alt="${item.title}" class="max-w-full max-h-[80vh] object-contain rounded-lg">
+                                </div>
+                            </div>
+                            <div class="flex flex-col py-4">
+                                <div>
+                                    <h2 class="text-2xl lg:text-3xl font-bold mb-2" style="color: #c084fc;">${item.title}</h2>
+                                    <p class="text-md text-gray-400 mb-4">${item.year}</p>
+                                    <p class="text-gray-300">${item.description}</p>
+                                </div>
+                                <div class="mt-auto pt-8">
+                                    <div class="flex flex-wrap gap-2">${tagsHtml}</div>
+                                </div>
+                            </div>
+                        </div>`;
+                } else { // Stacked layout
+                    modalContent.classList.remove('max-w-6xl');
+                    modalContent.classList.add('max-w-4xl');
+                    return `
+                        <div>
+                            <div class="flex justify-center items-center mb-4">
+                                <img src="${item.imageUrl}" alt="${item.title}" class="max-w-full max-h-[70vh] object-contain rounded-lg">
+                            </div>
+                            <div class="flex-shrink-0 text-left mt-4">
+                                <h2 class="text-2xl lg:text-3xl font-bold mb-2" style="color: #c084fc;">${item.title}</h2>
+                                <p class="text-md text-gray-400 mb-4">${item.year}</p>
+                                <p class="text-gray-300 mb-6">${item.description}</p>
+                                <div class="flex flex-wrap gap-2">${tagsHtml}</div>
+                            </div>
+                        </div>`;
+                }
+            };
+            
+            finalHtml = generateLayout(useSideBySide);
+            modalContent.innerHTML = finalHtml; 
+
+            // Check for overflow and re-render if needed
+            setTimeout(() => {
+                if (modalContent.scrollHeight > modalContent.clientHeight && !forceSideBySide.includes(item.id)) {
+                    finalHtml = generateLayout(!useSideBySide); // Switch to the other layout
+                    modalContent.innerHTML = finalHtml;
+                }
+            }, 0);
+
+        } catch (error) {
+            console.error("Could not load image for modal:", item.imageUrl, error);
+            finalHtml = `<p class="text-center text-red-400">Could not load image.</p>`;
+        }
+    }
+    
+    modalContent.innerHTML = finalHtml;
 }
 
-function getVisibleItemIds() {
-    const gallery = document.querySelector('.gallery-grid');
-    if (!gallery) return portfolioItems.map(item => item.id);
-
-    const visibleCards = gallery.querySelectorAll('.card:not(.filtered-out)');
-    return Array.from(visibleCards).map(card => parseInt(card.dataset.itemId));
-}
-
-function showNextItem() {
-    const visibleIds = getVisibleItemIds();
-    if (visibleIds.length <= 1) return;
-    const currentIndex = visibleIds.indexOf(currentModalItemId);
-    const nextIndex = (currentIndex + 1) % visibleIds.length;
-    showItemDetails(visibleIds[nextIndex]);
-}
-
-function showPreviousItem() {
-    const visibleIds = getVisibleItemIds();
-    if (visibleIds.length <= 1) return;
-    const currentIndex = visibleIds.indexOf(currentModalItemId);
-    const prevIndex = (currentIndex - 1 + visibleIds.length) % visibleIds.length;
-    showItemDetails(visibleIds[prevIndex]);
-}
 
 function closeModal() {
     modal.classList.add('hidden');
@@ -972,8 +1013,6 @@ window.addEventListener('scroll', handleScroll);
 window.addEventListener('keydown', (e) => {
     if (modal.classList.contains('hidden')) return;
     if (e.key === 'Escape') closeModal();
-    if (e.key === 'ArrowRight') showNextItem();
-    if (e.key === 'ArrowLeft') showPreviousItem();
 });
 modal.addEventListener('click', (e) => {
     if(e.target === modal) closeModal();
@@ -981,10 +1020,10 @@ modal.addEventListener('click', (e) => {
 
 randomBtns.forEach(btn => {
     if (btn) {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
             const randomIndex = Math.floor(Math.random() * portfolioItems.length);
             const randomItem = portfolioItems[randomIndex];
-            showItemDetails(randomItem.id);
+            showItemDetails(randomItem.id, e);
         });
     }
 });
@@ -997,11 +1036,10 @@ if (mobileMenuButton) {
 document.addEventListener('DOMContentLoaded', () => {
     if (videoGallery || graphicGallery) {
         renderGalleries();
-        const gallery = document.querySelector('.gallery-grid');
-        applyFilters(gallery);
     }
     if (document.getElementById('search-gallery')) {
         renderSearchResults();
     }
     populateSuggestions();
 });
+
