@@ -775,6 +775,13 @@ function createCard(item) {
         `<button onclick="toggleFilter('${tag}', event)" class="tag-btn text-sm font-semibold px-3 py-1 rounded-full transition hover:bg-[#6b2176] hover:text-white" style="background-color: #374151; color: #c084fc;">#${tag}</button>`
     ).join('');
 
+    const mobileDescriptionHtml = `<p class="text-sm text-gray-400 mt-2 mb-3 md:hidden">${item.description}</p>`;
+    const hoverDescriptionHtml = `
+        <div class="absolute inset-0 bg-black bg-opacity-80 items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:flex">
+           <p class="text-white text-center text-sm">${item.description}</p>
+        </div>
+    `;
+
     let imageContainerHtml = '';
     const playIconSvg = `<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-80" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>`;
 
@@ -785,18 +792,14 @@ function createCard(item) {
                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     ${playIconSvg}
                 </div>
-                 <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p class="text-white text-center text-sm">${item.description}</p>
-                 </div>
+                ${hoverDescriptionHtml}
             </div>
         `;
     } else {
         imageContainerHtml = `
             <div class="relative bg-black overflow-hidden group">
                 <img src="${displayImageUrl}" alt="${item.title}" class="w-full h-auto transition-transform duration-300 group-hover:scale-110">
-                 <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p class="text-white text-center text-sm">${item.description}</p>
-                 </div>
+                ${hoverDescriptionHtml}
             </div>
         `;
     }
@@ -807,6 +810,7 @@ function createCard(item) {
             <div class="p-4">
                 <p class="text-sm text-gray-400">${item.year}</p>
                 <h3 class="text-lg font-bold text-white mt-1 group-hover:text-[#81268F] transition-colors">${item.title}</h3>
+                ${mobileDescriptionHtml}
                 <div class="mt-3 flex flex-wrap gap-2">
                     ${tagsHtml}
                 </div>
@@ -1017,7 +1021,15 @@ async function showItemDetails(itemId, event) {
         `<a href="search.html?tag=${encodeURIComponent(tag)}" class="tag-btn text-sm font-semibold px-3 py-1 rounded-full transition hover:bg-[#6b2176] hover:text-white" style="background-color: #374151; color: #c084fc;">#${tag}</a>`
     ).join('');
 
-    let finalHtml = '';
+    const closeButtonHtml = `
+        <button onclick="closeModal()" class="absolute top-2 right-2 p-2 text-gray-400 hover:text-white md:hidden z-10" aria-label="Close modal">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    `;
+
+    let finalHtmlContent = '';
 
     if (item.type === 'video') {
          modalContent.classList.remove('max-w-6xl');
@@ -1027,25 +1039,22 @@ async function showItemDetails(itemId, event) {
         const youtubeSrc = `https://www.youtube.com/embed/${item.youtubeId}?autoplay=1`;
 
         if (item.localVideo) {
-            mediaHtml = `<div class="relative w-full overflow-hidden mb-4" style="padding-top: 56.25%;"><video controls autoplay class="absolute top-0 left-0 w-full h-full rounded-lg bg-black"><source src="${item.localVideo}" type="video/mp4">Your browser does not support the video tag.</video></div>`;
+             mediaHtml = `<div class="relative w-full overflow-hidden mb-4" style="padding-top: 56.25%;"><video controls autoplay class="absolute top-0 left-0 w-full h-full rounded-lg bg-black"><source src="${item.localVideo}" type="video/mp4">Your browser does not support the video tag.</video></div>`;
         } else if (item.youtubeId) {
             mediaHtml = `<div class="relative w-full overflow-hidden mb-4" style="padding-top: 56.25%;"><iframe src="${youtubeSrc}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full rounded-lg"></iframe></div>`;
         } else {
              mediaHtml = `<div class="aspect-w-16 aspect-h-9 bg-gray-800 flex items-center justify-center rounded-lg mb-4"><p class="text-gray-400">Video not available</p></div>`;
         }
 
-        finalHtml = `
-            <div>
-                ${mediaHtml}
-                <div class="text-left mt-4">
-                    <h2 class="text-2xl lg:text-3xl font-bold mb-2" style="color: #c084fc;">${item.title}</h2>
-                    <p class="text-md text-gray-400 mb-4">${item.year}</p>
-                    <p class="text-gray-300 mb-6">${item.description}</p>
-                    <div class="flex flex-wrap gap-2">${tagsHtml}</div>
-                </div>
-            </div>`;
-        // Set content immediately for videos
-        modalContent.innerHTML = finalHtml;
+        finalHtmlContent = `
+            ${mediaHtml}
+            <div class="text-left mt-4">
+                <h2 class="text-2xl lg:text-3xl font-bold mb-2" style="color: #c084fc;">${item.title}</h2>
+                <p class="text-md text-gray-400 mb-4">${item.year}</p>
+                <p class="text-gray-300 mb-6">${item.description}</p>
+                <div class="flex flex-wrap gap-2">${tagsHtml}</div>
+            </div>
+        `;
 
     } else {
         try {
@@ -1092,19 +1101,20 @@ async function showItemDetails(itemId, event) {
                         </div>`;
                 }
             };
-
-            finalHtml = generateLayout(useSideBySide);
-            // Set content after image dimensions are known for graphics
-            modalContent.innerHTML = finalHtml;
+            finalHtmlContent = generateLayout(useSideBySide);
 
         } catch (error) {
             console.error("Could not load image for modal:", item.imageUrl, error);
-            finalHtml = `<div class="text-center text-red-400 p-8">Could not load image. Please try again later.</div>`;
-            modalContent.innerHTML = finalHtml;
+            finalHtmlContent = `<div class="text-center text-red-400 p-8">Could not load image. Please try again later.</div>`;
         }
     }
-}
 
+    // Combine close button and content, then update modal
+    modalContent.innerHTML = `
+        ${closeButtonHtml}
+        <div>${finalHtmlContent}</div>
+    `;
+}
 
 function closeModal() {
      const iframe = modalContent.querySelector('iframe');
