@@ -106,3 +106,10 @@ footer { border-top-color: #374151; color: #9ca3af; }
      color: #FFFFFF !important;
      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
  }
+
+/* Added for mobile modal padding */
+@media (max-width: 640px) {
+    #modal-content {
+        padding: 1rem;
+    }
+}
