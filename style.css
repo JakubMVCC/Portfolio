@@ -1,33 +1,36 @@
-html { background-color: #000000; color-scheme: dark; }
+html { background-color: #000000; color-scheme: dark; scroll-behavior: smooth; }
 body { font-family: 'Inter', sans-serif; background-color: #000000; color: #E5E7EB; }
+
 .portfolio-title { transition: color 0.3s; }
-.portfolio-title:hover { color: #81268F; }
-.nav-link { transition: color 0.3s, border-bottom-color 0.3s; border-bottom: 2px solid transparent; padding-bottom: 4px; color: #9ca3af; }
-.nav-link:hover { color: #81268F; }
-.nav-link.active { color: #81268F; border-bottom-color: #81268F; font-weight: 600; }
-header { background-color: rgba(0, 0, 0, 0.8); }
+.portfolio-title:hover { color: #06b6d4; /* Cyan Accent */ }
+
+.nav-link { transition: color 0.3s, border-bottom-color 0.3s; border-bottom: 2px solid transparent; padding-bottom: 2px; color: #9ca3af; }
+.nav-link:hover { color: #06b6d4; }
+.nav-link.active { color: #c084fc; border-bottom-color: #c084fc; font-weight: 600; }
+
 .header-search-bar { background-color: #111827; border: 1px solid #374151; color: #E5E7EB; }
+
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #111827; }
+::-webkit-scrollbar-track { background: #050505; }
 ::-webkit-scrollbar-thumb { background: #81268F; border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: #6b2176; }
-footer { border-top-color: #374151; color: #9ca3af; }
-#item-modal { background-color: rgba(0,0,0,0.75); }
-#modal-content { background-color: #1f2937; color: #E5E7EB; box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2), 0 4px 6px -2px rgba(129, 38, 143, 0.1); }
+::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
 
-.tag-btn { background-color: #374151; color: #c084fc; transition: background-color 0.2s, color 0.2s; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; }
-.tag-btn:hover { background-color: #6b2176; color: white; }
-.tag-btn.active-filter { background-color: #6b2176; color: white; }
+#item-modal { background-color: rgba(0,0,0,0.85); }
+#modal-content { background-color: #1f2937; color: #E5E7EB; border: 1px solid #374151; box-shadow: 0 10px 25px -3px rgba(129, 38, 143, 0.2); }
 
-#scroll-to-top { background-color: #81268F; color: white; transition: opacity 0.3s, visibility 0.3s; opacity: 0; visibility: hidden; }
-#scroll-to-top:hover { background-color: #6b2176; }
+.tag-btn { background-color: #111827; color: #c084fc; border: 1px solid #374151; transition: all 0.2s; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; }
+.tag-btn:hover { background-color: #81268F; color: white; border-color: #81268F; }
+.tag-btn.active-filter { background-color: #81268F; color: white; border-color: #81268F; }
+
+#scroll-to-top { background-color: #81268F; color: white; transition: all 0.3s; opacity: 0; visibility: hidden; }
+#scroll-to-top:hover { background-color: #06b6d4; transform: translateY(-3px); }
 #scroll-to-top.visible { opacity: 1; visibility: visible; }
 
-.card { background-color: #111827; transition: transform 0.3s, box-shadow 0.3s; }
-.card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2), 0 4px 6px -2px rgba(129, 38, 143, 0.1); }
+.card { background-color: #111827; transition: transform 0.3s, box-shadow 0.3s, opacity 0.4s ease, filter 0.4s ease; border: 1px solid #1f2937; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px -3px rgba(129, 38, 143, 0.2); border-color: #374151; }
 .card.filtered-out { opacity: 0.2; filter: grayscale(1); pointer-events: none; }
 
-.text-theme-accent { color: #81268F; }
+.text-theme-accent { color: #c084fc; }
 .text-text-primary { color: #E5E7EB; }
 .text-text-secondary { color: #9ca3af; }
 
@@ -35,139 +38,184 @@ footer { border-top-color: #374151; color: #9ca3af; }
 .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%; }
 .video-container iframe, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-.aspect-w-16 { position: relative; padding-bottom: 56.25%; }
-.aspect-h-9 {}
-.aspect-w-16 > * { position: absolute; height: 100%; width: 100%; top: 0; right: 0; bottom: 0; left: 0; }
-
 .aspect-video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    width: 100%;
-    max-width: 100%;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2), 0 4px 6px -2px rgba(129, 38, 143, 0.1);
-    background-color: #000000;
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%; max-width: 100%; border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2); background-color: #000000;
 }
-.aspect-video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 0.5rem;
-}
+.aspect-video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 0.5rem; }
 
- .info-card { background-color: #111827; }
- .growth-section { background-color: rgba(17, 24, 39, 0.5); color: #9ca3af; }
+.info-card { background-color: #111827; border: 1px solid #1f2937; }
+.growth-section { background-color: rgba(17, 24, 39, 0.5); color: #9ca3af; border: 1px solid #1f2937; }
 
- .profile-image-container { position: relative; display: inline-block; }
- .profile-image-container .howdy-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 9999px;
-    opacity: 0;
-    transition: opacity 0.3s;
- }
- .profile-image-container:hover .howdy-overlay { opacity: 1; }
+.profile-image-container { position: relative; display: inline-block; }
+.profile-image-container .howdy-overlay {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); border-radius: 9999px; opacity: 0; transition: opacity 0.3s;
+}
+.profile-image-container:hover .howdy-overlay { opacity: 1; }
 
-#graphic-gallery .card {
-     break-inside: avoid;
-     margin-bottom: 2rem;
- }
-
-#graphic-gallery {
-    column-gap: 2rem;
-    column-count: 1;
-}
-@media (min-width: 768px) {
-    #graphic-gallery { column-count: 2; }
-}
-@media (min-width: 1024px) {
-    #graphic-gallery { column-count: 3; }
-}
+#graphic-gallery .card { break-inside: avoid; margin-bottom: 2rem; }
+#graphic-gallery { column-gap: 2rem; column-count: 1; }
+@media (min-width: 768px) { #graphic-gallery { column-count: 2; } }
+@media (min-width: 1024px) { #graphic-gallery { column-count: 3; } }
 
 /* Website Card Base Styles */
-.website-card {
-    background-color: #111827;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-}
-.website-card p {
-    color: #9ca3af;
-}
-.website-card h3 {
-    color: #E5E7EB; /* Default title color */
-}
+.website-card { background-color: #111827; transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; border: 1px solid #1f2937; }
+.website-card p { color: #9ca3af; }
+.website-card h3 { color: #E5E7EB; }
 
-/* Website Card Styles for Medium Screens and Up (md: 768px) */
 @media (min-width: 768px) {
-    .website-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2), 0 4px 6px -2px rgba(129, 38, 143, 0.1);
-    }
-    #splatter-head-card:hover { background-color: #F89FFD; }
-    #slovak-man-card:hover { background-color: #65A659; }
-    #school-portfolio-card:hover { background-color: #085646; }
+    .website-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2); border-color: #81268F; }
+    
+    #splatter-head-card:hover { background-color: #F89FFD; border-color: #F89FFD; }
+    #c2e2-gallery-card:hover { background-color: #FF8753; border-color: #FF8753; }
+    #disney-goodbye-card:hover { background-color: #16C98D; border-color: #16C98D; }
+    #ux-showcase-card:hover { background-color: #7BBDF2; border-color: #7BBDF2; }
+    #school-portfolio-card:hover { background-color: #085646; border-color: #085646; }
 
     #splatter-head-card:hover h3, #splatter-head-card:hover p,
-    #slovak-man-card:hover h3, #slovak-man-card:hover p,
+    #c2e2-gallery-card:hover h3, #c2e2-gallery-card:hover p,
+    #disney-goodbye-card:hover h3, #disney-goodbye-card:hover p,
+    #ux-showcase-card:hover h3, #ux-showcase-card:hover p,
     #school-portfolio-card:hover h3, #school-portfolio-card:hover p {
-        color: #FFFFFF !important;
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        color: #FFFFFF !important; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }
 
-/* Website Card Styles for Screens Smaller than Medium (< 768px) */
 @media (max-width: 767px) {
     #splatter-head-card { background-color: #F89FFD; }
-    #slovak-man-card { background-color: #65A659; }
+    #c2e2-gallery-card { background-color: #FF8753; }
+    #disney-goodbye-card { background-color: #16C98D; }
+    #ux-showcase-card { background-color: #7BBDF2; }
     #school-portfolio-card { background-color: #085646; }
 
-    /* Make text white by default on mobile for colored cards */
     #splatter-head-card h3, #splatter-head-card p,
-    #slovak-man-card h3, #slovak-man-card p,
+    #c2e2-gallery-card h3, #c2e2-gallery-card p,
+    #disney-goodbye-card h3, #disney-goodbye-card p,
+    #ux-showcase-card h3, #ux-showcase-card p,
     #school-portfolio-card h3, #school-portfolio-card p {
-        color: #FFFFFF !important;
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        color: #FFFFFF !important; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     }
-     /* Remove transform/shadow on hover for mobile */
-     .website-card:hover {
-        transform: none;
-        box-shadow: none;
-     }
+    .website-card:hover { transform: none; box-shadow: none; }
 }
 
-/* Mobile modal padding */
-@media (max-width: 640px) {
-    #modal-content {
-        padding: 1rem;
-    }
-}
+@media (max-width: 640px) { #modal-content { padding: 1rem; } }
 
-/* Icon link styles */
 @media (min-width: 768px) {
-    .icon-link img {
-        filter: grayscale(50%) opacity(70%);
-        transition: transform 0.3s, filter 0.3s;
-    }
-    .icon-link:hover img {
-        transform: scale(1.1);
-        filter: grayscale(0%) opacity(100%);
-    }
+    .icon-link img { filter: grayscale(50%) opacity(70%); transition: transform 0.3s, filter 0.3s; }
+    .icon-link:hover img { transform: scale(1.1); filter: grayscale(0%) opacity(100%); }
 }
 
 @media (max-width: 767px) {
-    .icon-link img {
-        filter: grayscale(0%) opacity(100%);
-        transition: transform 0.3s;
-    }
-     .icon-link:hover img {
-        transform: scale(1.1);
-     }
+    .icon-link img { filter: grayscale(0%) opacity(100%); transition: transform 0.3s; }
+    .icon-link:hover img { transform: scale(1.1); }
+}
+
+.site-header-nav { padding-top: 0.5rem; padding-bottom: 0.5rem; height: 80px; }
+
+@media (min-width: 768px) {
+    .info-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2); background-color: #81268F; border-color: #81268F; }
+    .info-card:hover h3, .info-card:hover p { color: #FFFFFF !important; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); }
+    .growth-section:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2); border-color: #81268F; }
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* =========================================================================
+   About Page Image Masks & Fade Transitions (Easily Adjustable)
+   ========================================================================= */
+
+/* =========================================================================
+   ABOUT PAGE — HERO IMAGE
+   ========================================================================= */
+
+/* 
+   Creates a fade ONLY at the bottom of the main About page image.
+
+   black 0%–65%       = image is completely visible
+   black 65%–100%     = image gradually fades out
+   transparent 100%  = image is completely invisible at the bottom
+
+   This class is ONLY used on the About page hero image,
+   so other images on the website are not affected.
+*/
+.about-hero-mask {
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 0%,       /* Image is fully visible at the top */
+        black 65%,      /* Image stays fully visible until 65% */
+        transparent 100% /* Image completely fades out at bottom */
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 0%,       /* Image is fully visible at the top */
+        black 65%,      /* Image stays fully visible until 65% */
+        transparent 100% /* Image completely fades out at bottom */
+    );
+
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+/* =========================================================================
+   Current Journey Image Fade
+   ========================================================================= */
+
+.about-journey-mask {
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+
+        transparent 10%,   /* START: image is completely invisible */
+
+        black 35%,        /* TOP FADE ENDS: image becomes fully visible here */
+
+        black 50%,        /* FULL IMAGE: image stays fully visible until here */
+
+        transparent 70%  /* BOTTOM FADE: image becomes completely invisible here */
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+
+        transparent 10%,   /* START: image is completely invisible */
+
+        black 35%,        /* TOP FADE ENDS: image becomes fully visible here */
+
+        black 50%,        /* FULL IMAGE: image stays fully visible until here */
+
+        transparent 70%  /* BOTTOM FADE: image becomes completely invisible here */
+    );
+
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
 }

@@ -772,12 +772,12 @@ function createCard(item) {
 
     const tagsString = item.tags.join(',');
     const tagsHtml = item.tags.map(tag =>
-        `<button onclick="toggleFilter('${tag}', event)" class="tag-btn text-sm font-semibold px-3 py-1 rounded-full transition hover:bg-[#6b2176] hover:text-white" style="background-color: #374151; color: #c084fc;">#${tag}</button>`
+        `<button onclick="toggleFilter('${tag}', event)" class="tag-btn hover:text-cyan-400">#${tag}</button>`
     ).join('');
 
     const mobileDescriptionHtml = `<p class="text-sm text-gray-400 mt-2 mb-3 md:hidden">${item.description}</p>`;
     const hoverDescriptionHtml = `
-        <div class="absolute inset-0 bg-black bg-opacity-80 items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:flex">
+        <div class="absolute inset-0 bg-black/80 items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:flex">
            <p class="text-white text-center text-sm">${item.description}</p>
         </div>
     `;
@@ -788,8 +788,8 @@ function createCard(item) {
     if (isVideo) {
         imageContainerHtml = `
             <div class="relative aspect-w-16 aspect-h-9 bg-black overflow-hidden group">
-                <img src="${displayImageUrl}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <img src="${displayImageUrl}" alt="${item.title} - ${item.type} project" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     ${playIconSvg}
                 </div>
                 ${hoverDescriptionHtml}
@@ -798,18 +798,18 @@ function createCard(item) {
     } else {
         imageContainerHtml = `
             <div class="relative bg-black overflow-hidden group">
-                <img src="${displayImageUrl}" alt="${item.title}" class="w-full h-auto transition-transform duration-300 group-hover:scale-110">
+                <img src="${displayImageUrl}" alt="${item.title} - ${item.type} project" class="w-full h-auto transition-transform duration-300 group-hover:scale-110">
                 ${hoverDescriptionHtml}
             </div>
         `;
     }
 
      return `
-        <div class="card rounded-lg overflow-hidden transition-all duration-300 group bg-gray-900" data-tags="${tagsString}" data-item-id="${item.id}" onclick="showItemDetails(${item.id}, event)">
+        <div class="card rounded-lg overflow-hidden transition-all duration-300 group bg-[#111827]" data-tags="${tagsString}" data-item-id="${item.id}" onclick="showItemDetails(${item.id}, event)">
             ${imageContainerHtml}
             <div class="p-4">
                 <p class="text-sm text-gray-400">${item.year}</p>
-                <h3 class="text-lg font-bold text-white mt-1 group-hover:text-[#81268F] transition-colors">${item.title}</h3>
+                <h3 class="text-lg font-bold text-white mt-1 group-hover:text-cyan-400 transition-colors">${item.title}</h3>
                 ${mobileDescriptionHtml}
                 <div class="mt-3 flex flex-wrap gap-2">
                     ${tagsHtml}
@@ -832,7 +832,6 @@ function renderGalleries() {
 
 function toggleFilter(tag, event) {
     event.stopPropagation();
-    const element = event.currentTarget;
     const gallery = document.getElementById('video-gallery') || document.getElementById('graphic-gallery');
 
     const tagIndex = activeFilters.indexOf(tag);
@@ -858,7 +857,7 @@ function updateFilterDisplay(gallery) {
     if (currentFilterContainer) {
         if (activeFilters.length > 0) {
             const tagsHtml = activeFilters.map(tag =>
-                 `<span class="inline-flex items-center bg-[#6b2176] text-white text-sm font-semibold pl-3 pr-2 py-1 rounded-full">
+                 `<span class="inline-flex items-center bg-[#81268F] text-white text-sm font-semibold pl-3 pr-2 py-1 rounded-full border border-[#81268F]">
                     #${tag}
                     <button onclick="removeFilter('${tag}', this)" class="ml-2 -mr-1 text-gray-300 hover:text-white">&times;</button>
                 </span>`
@@ -868,7 +867,7 @@ function updateFilterDisplay(gallery) {
                 <div class="flex items-center justify-center flex-wrap gap-2">
                     <span class="text-gray-400">Filtering by:</span>
                     ${tagsHtml}
-                    <button onclick="clearAllFilters(this)" class="ml-2 text-sm text-[#c084fc] hover:underline">Clear All</button>
+                    <button onclick="clearAllFilters(this)" class="ml-2 text-sm text-cyan-400 hover:underline">Clear All</button>
                 </div>
             `;
             currentFilterContainer.classList.remove('hidden');
@@ -904,13 +903,9 @@ function applyFilters(gallery) {
         mainElement.querySelectorAll('.tag-btn').forEach(btn => {
             const tag = btn.innerText.replace('#', '');
             if (activeFilters.includes(tag)) {
-                btn.classList.add('active-filter');
-                 btn.style.backgroundColor = '#6b2176';
-                 btn.style.color = 'white';
+                 btn.classList.add('active-filter');
             } else {
                 btn.classList.remove('active-filter');
-                btn.style.backgroundColor = '#374151';
-                 btn.style.color = '#c084fc';
             }
         });
      }
@@ -971,7 +966,6 @@ function renderSearchResults() {
         );
     }
 
-
      const queryDisplayElement = document.getElementById('search-query-display');
      if (queryDisplayElement) {
          queryDisplayElement.innerText = displayQuery;
@@ -999,7 +993,7 @@ function getImageDimensions(url) {
     });
 }
 
-async function showItemDetails(itemId, event) {
+async function showItemDetails(itemId, event, updateUrl = true) {
     if (event && event.target.closest('#modal-content .tag-btn')) {
         return;
     }
@@ -1012,17 +1006,23 @@ async function showItemDetails(itemId, event) {
     if (!item) return;
 
     currentModalItemId = itemId;
+    
+    if (updateUrl) {
+        const newUrl = new URL(window.location);
+        newUrl.searchParams.set('item', itemId);
+        window.history.pushState({ modalItem: itemId }, '', newUrl);
+    }
 
-    modalContent.innerHTML = `<div class="flex justify-center items-center h-64"><div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-[#81268F]"></div></div>`;
+    modalContent.innerHTML = `<div class="flex justify-center items-center h-64"><div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-cyan-400"></div></div>`;
     modal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
 
     const tagsHtml = item.tags.map(tag =>
-        `<a href="search.html?tag=${encodeURIComponent(tag)}" class="tag-btn text-sm font-semibold px-3 py-1 rounded-full transition hover:bg-[#6b2176] hover:text-white" style="background-color: #374151; color: #c084fc;">#${tag}</a>`
+        `<a href="search.html?tag=${encodeURIComponent(tag)}" class="tag-btn hover:text-cyan-400">#${tag}</a>`
     ).join('');
 
     const closeButtonHtml = `
-        <button onclick="closeModal()" class="absolute top-2 right-2 p-2 text-gray-400 hover:text-white md:hidden z-10" aria-label="Close modal">
+        <button onclick="closeModal()" class="absolute top-2 right-2 p-2 text-gray-400 hover:text-cyan-400 md:hidden z-10" aria-label="Close modal">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
@@ -1049,8 +1049,8 @@ async function showItemDetails(itemId, event) {
         finalHtmlContent = `
             ${mediaHtml}
             <div class="text-left mt-4">
-                <h2 class="text-2xl lg:text-3xl font-bold mb-2" style="color: #c084fc;">${item.title}</h2>
-                <p class="text-md text-gray-400 mb-4">${item.year}</p>
+                <h2 class="text-2xl lg:text-3xl font-bold mb-2 text-white">${item.title}</h2>
+                <p class="text-md text-cyan-400 mb-4">${item.year}</p>
                 <p class="text-gray-300 mb-6">${item.description}</p>
                 <div class="flex flex-wrap gap-2">${tagsHtml}</div>
             </div>
@@ -1058,7 +1058,7 @@ async function showItemDetails(itemId, event) {
 
     } else {
         try {
-            modalContent.innerHTML = `<div class="flex justify-center items-center h-64"><div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-[#81268F]"></div></div>`;
+            modalContent.innerHTML = `<div class="flex justify-center items-center h-64"><div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-cyan-400"></div></div>`;
 
             const { width, height } = await getImageDimensions(item.imageUrl);
             const forceSideBySide = [37, 42, 40, 27, 38, 51, 53, 36];
@@ -1073,12 +1073,12 @@ async function showItemDetails(itemId, event) {
                     return `
                         <div class="md:grid md:grid-cols-5 md:gap-8">
                             <div class="md:col-span-3 flex justify-center items-start mb-4 md:mb-0">
-                                <img src="${item.imageUrl}" alt="${item.title}" class="max-w-full max-h-[80vh] object-contain rounded-lg">
+                                <img src="${item.imageUrl}" alt="${item.title} - ${item.type} project" class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-md">
                             </div>
                             <div class="md:col-span-2 flex flex-col">
                                 <div>
-                                    <h2 class="text-2xl lg:text-3xl font-bold mb-2" style="color: #c084fc;">${item.title}</h2>
-                                    <p class="text-md text-gray-400 mb-4">${item.year}</p>
+                                    <h2 class="text-2xl lg:text-3xl font-bold mb-2 text-white">${item.title}</h2>
+                                    <p class="text-md text-cyan-400 mb-4">${item.year}</p>
                                     <p class="text-gray-300 mb-6">${item.description}</p>
                                 </div>
                                 <div class="pt-4 md:pt-8 mt-auto">
@@ -1090,11 +1090,11 @@ async function showItemDetails(itemId, event) {
                     return `
                         <div>
                             <div class="flex justify-center items-center mb-4">
-                                <img src="${item.imageUrl}" alt="${item.title}" class="max-w-full max-h-[70vh] object-contain rounded-lg">
+                                <img src="${item.imageUrl}" alt="${item.title} - ${item.type} project" class="max-w-full max-h-[70vh] object-contain rounded-lg shadow-md">
                             </div>
                             <div class="text-left mt-4">
-                                <h2 class="text-2xl lg:text-3xl font-bold mb-2" style="color: #c084fc;">${item.title}</h2>
-                                <p class="text-md text-gray-400 mb-4">${item.year}</p>
+                                <h2 class="text-2xl lg:text-3xl font-bold mb-2 text-white">${item.title}</h2>
+                                <p class="text-md text-cyan-400 mb-4">${item.year}</p>
                                 <p class="text-gray-300 mb-6">${item.description}</p>
                                 <div class="flex flex-wrap gap-2">${tagsHtml}</div>
                             </div>
@@ -1109,14 +1109,13 @@ async function showItemDetails(itemId, event) {
         }
     }
 
-    // Combine close button and content, then update modal
     modalContent.innerHTML = `
         ${closeButtonHtml}
         <div>${finalHtmlContent}</div>
     `;
 }
 
-function closeModal() {
+function closeModal(updateUrl = true) {
      const iframe = modalContent.querySelector('iframe');
      const video = modalContent.querySelector('video');
 
@@ -1133,20 +1132,23 @@ function closeModal() {
      }
 
      modalContent.innerHTML = '';
-
-    modal.classList.add('hidden');
-    document.body.style.overflow = 'auto';
-    currentModalItemId = null;
+     modal.classList.add('hidden');
+     document.body.style.overflow = 'auto';
+     currentModalItemId = null;
+     
+     if (updateUrl) {
+         const newUrl = new URL(window.location);
+         newUrl.searchParams.delete('item');
+         window.history.pushState({}, '', newUrl);
+     }
 }
 
 function handleScroll() {
     if (scrollToTopBtn) {
         if (window.scrollY > 300) {
             scrollToTopBtn.classList.add('visible');
-             scrollToTopBtn.classList.remove('opacity-0', 'invisible');
         } else {
             scrollToTopBtn.classList.remove('visible');
-             scrollToTopBtn.classList.add('opacity-0', 'invisible');
         }
     }
 }
@@ -1156,16 +1158,28 @@ function scrollToTop() {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+window.addEventListener('popstate', (event) => {
+    if (event.state && event.state.modalItem) {
+        showItemDetails(event.state.modalItem, null, false);
+    } else {
+        closeModal(false);
+    }
+});
+
 window.addEventListener('keydown', (e) => {
-    if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+    if (modal && !modal.classList.contains('hidden') && e.key === 'Escape') {
         closeModal();
     }
 });
-modal.addEventListener('click', (e) => {
-    if (e.target.id === 'item-modal') {
-        closeModal();
-    }
-});
+
+if (modal) {
+    modal.addEventListener('click', (e) => {
+        if (e.target.id === 'item-modal') {
+            closeModal();
+        }
+    });
+}
 
 [randomBtnDesktop, randomBtnTablet, randomBtnMobile].forEach(btn => {
     if (btn) {
@@ -1197,5 +1211,73 @@ document.addEventListener('DOMContentLoaded', () => {
         renderSearchResults();
     }
     populateSuggestions();
-     handleScroll();
+    handleScroll();
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const itemId = urlParams.get('item');
+    if (itemId) {
+        showItemDetails(parseInt(itemId), null, false);
+    }
+    
+    const header = document.getElementById('main-header');
+
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.style.transform = 'translateY(-100%)';
+                header.style.opacity = '0';
+            } else {
+                header.style.transform = 'translateY(0)';
+                header.style.opacity = '1';
+            }
+        });
+    }
+	
+    const sizzleTriggers = document.querySelectorAll('.sizzle-trigger');
+    const sizzleModal = document.getElementById('sizzle-modal');
+    const sizzleModalContent = document.getElementById('sizzle-modal-content');
+    const sizzleIframeFs = document.getElementById('sizzle-iframe-fullscreen');
+    const closeSizzleBtn = document.getElementById('close-sizzle');
+
+    if (sizzleTriggers.length > 0 && sizzleModal && sizzleIframeFs) {
+        
+        sizzleTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const videoUrl = trigger.getAttribute('data-video-url');
+                
+                sizzleModal.classList.remove('hidden');
+                
+                setTimeout(() => {
+                    sizzleModal.classList.remove('opacity-0');
+                    sizzleModalContent.classList.remove('scale-95');
+                    sizzleModalContent.classList.add('scale-100');
+                }, 10);
+                
+                sizzleIframeFs.src = videoUrl;
+            });
+        });
+
+        const closeSizzleModal = () => {
+            sizzleModal.classList.add('opacity-0');
+            sizzleModalContent.classList.remove('scale-100');
+            sizzleModalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                sizzleModal.classList.add('hidden');
+                sizzleIframeFs.src = "";
+            }, 300);
+        };
+
+        closeSizzleBtn.addEventListener('click', closeSizzleModal);
+        
+        sizzleModal.addEventListener('click', (e) => {
+            if (e.target === sizzleModal) closeSizzleModal();
+        });
+        
+        window.addEventListener('keydown', (e) => {
+            if (!sizzleModal.classList.contains('hidden') && e.key === 'Escape') {
+                closeSizzleModal();
+            }
+        });
+    }
 });
