@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="flex flex-col min-h-screen antialiased bg-gradient-to-b from-[#3a0a47] via-[#15041a] via-40% to-black to-60% text-gray-300 bg-no-repeat">
+<body class="flex flex-col min-h-screen antialiased bg-gradient-to-b from-[#3a0a47] via-[#15041a] via-40% to-black to-60% text-gray-300 bg-no-repeat bg-fixed">
 
     <header id="main-header" class="bg-black/50 backdrop-blur-md fixed w-full top-0 z-50 transition-all duration-300 ease-in-out">
         <nav class="container mx-auto px-6 site-header-nav flex justify-between items-center">
@@ -63,13 +63,15 @@
         <!-- Hero Section -->
         <section class="flex flex-col md:flex-row w-full min-h-[calc(100vh-80px)] bg-gradient-to-b from-transparent via-[#3a0a47]/40 to-black relative pb-24 md:pb-32">
             
-            <div class="w-full md:w-1/2 h-[50vh] md:h-auto relative about-hero-mask">
-                <img src="extra/index 1.jpg" alt="A photo of Jakub" class="absolute inset-0 w-full h-full object-cover object-center md:border-r border-white/10">
+            <div class="absolute md:relative inset-0 md:inset-auto w-full md:w-1/2 h-full md:h-auto about-hero-mask z-0">
+                <img src="extra/index 1.jpg" alt="A photo of Jakub" class="absolute inset-0 w-full h-full object-cover object-center md:border-r border-white/10 z-0">
+                <!-- Mobile Dark Overlay -->
+                <div class="absolute inset-0 bg-black/60 md:hidden z-10"></div>
             </div>
 
-            <div class="w-full md:w-1/2 flex flex-col justify-center items-start p-10 md:p-16 lg:p-24 bg-transparent relative z-10">
+            <div class="w-full md:w-1/2 min-h-[calc(100vh-80px)] md:min-h-0 flex flex-col justify-center items-start p-10 md:p-16 lg:p-24 bg-transparent relative z-10">
                 <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white">Jakub Tilecky</h1>
-                <h2 class="text-xl md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#c084fc] to-cyan-400 tracking-widest uppercase font-bold mb-6">Filmmaker &amp; Multimedia Designer</h2>
+                <h2 class="text-xl md:text-2xl text-[#c084fc] md:text-transparent md:bg-clip-text md:bg-gradient-to-r md:from-[#c084fc] md:to-cyan-400 tracking-widest uppercase font-bold mb-6">Filmmaker &amp; Multimedia Designer</h2>
                 <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-lg leading-relaxed">
                     For over 15 years I've been turning ideas into stories people can see, hear, and feel.
                 </p>
