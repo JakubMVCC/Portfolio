@@ -219,3 +219,8 @@ body { font-family: 'Inter', sans-serif; background-color: #000000; color: #E5E7
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
+
+/* Dropdown Menu Transparency Override */
+#main-header .group .absolute {
+    background-color: rgba(17, 24, 39, 0.8) !important;
+}
