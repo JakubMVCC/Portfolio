@@ -1,8 +1,20 @@
 html { background-color: #000000; color-scheme: dark; scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; background-color: #000000; color: #E5E7EB; }
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: transparent; 
+    color: #E5E7EB; 
+    /* Global text drop shadow for improved readability */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.85); 
+}
+
+/* Remove text shadow from UI elements to keep them sharp */
+button, input, textarea, .tag-btn, .nav-link, .portfolio-title {
+    text-shadow: none;
+}
 
 .portfolio-title { transition: color 0.3s; }
-.portfolio-title:hover { color: #06b6d4; /* Cyan Accent */ }
+.portfolio-title:hover { color: #06b6d4; }
 
 .nav-link { transition: color 0.3s, border-bottom-color 0.3s; border-bottom: 2px solid transparent; padding-bottom: 2px; color: #9ca3af; }
 .nav-link:hover { color: #06b6d4; }
@@ -78,7 +90,7 @@ body { font-family: 'Inter', sans-serif; background-color: #000000; color: #E5E7
     #disney-goodbye-card:hover h3, #disney-goodbye-card:hover p,
     #ux-showcase-card:hover h3, #ux-showcase-card:hover p,
     #school-portfolio-card:hover h3, #school-portfolio-card:hover p {
-        color: #FFFFFF !important; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        color: #FFFFFF !important; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
     }
 }
 
@@ -94,7 +106,7 @@ body { font-family: 'Inter', sans-serif; background-color: #000000; color: #E5E7
     #disney-goodbye-card h3, #disney-goodbye-card p,
     #ux-showcase-card h3, #ux-showcase-card p,
     #school-portfolio-card h3, #school-portfolio-card p {
-        color: #FFFFFF !important; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        color: #FFFFFF !important; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
     }
     .website-card:hover { transform: none; box-shadow: none; }
 }
@@ -115,7 +127,7 @@ body { font-family: 'Inter', sans-serif; background-color: #000000; color: #E5E7
 
 @media (min-width: 768px) {
     .info-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2); background-color: #81268F; border-color: #81268F; }
-    .info-card:hover h3, .info-card:hover p { color: #FFFFFF !important; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); }
+    .info-card:hover h3, .info-card:hover p { color: #FFFFFF !important; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); }
     .growth-section:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(129, 38, 143, 0.2); border-color: #81268F; }
 }
 
@@ -148,79 +160,71 @@ body { font-family: 'Inter', sans-serif; background-color: #000000; color: #E5E7
     transform: rotateY(180deg);
 }
 
-/* =========================================================================
-   About Page Image Masks & Fade Transitions (Easily Adjustable)
-   ========================================================================= */
+/* Dropdown Menu Transparency Override */
+#main-header .group .absolute {
+    background-color: rgba(17, 24, 39, 0.8) !important;
+}
 
 /* =========================================================================
-   ABOUT PAGE — HERO IMAGE
+   IMAGE MASKS & FADE TRANSITIONS
+   Each section has its own mask so you can adjust the fades independently.
+   
+   black = fully visible
+   transparent = fully faded out
    ========================================================================= */
 
-/* 
-   Creates a fade ONLY at the bottom of the main About page image.
-
-   black 0%–65%       = image is completely visible
-   black 65%–100%     = image gradually fades out
-   transparent 100%  = image is completely invisible at the bottom
-
-   This class is ONLY used on the About page hero image,
-   so other images on the website are not affected.
-*/
-.about-hero-mask {
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 0%,       /* Image is fully visible at the top */
-        black 65%,      /* Image stays fully visible until 65% */
-        transparent 100% /* Image completely fades out at bottom */
-    );
-
-    mask-image: linear-gradient(
-        to bottom,
-        black 0%,       /* Image is fully visible at the top */
-        black 65%,      /* Image stays fully visible until 65% */
-        transparent 100% /* Image completely fades out at bottom */
-    );
-
+/* Index Page Hero Mask */
+.index-hero-mask {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
 }
 
-/* =========================================================================
-   Current Journey Image Fade
-   ========================================================================= */
+/* About Page Hero Mask */
+.about-hero-mask {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
 
+/* Portfolio Page Hero Mask */
+.portfolio-hero-mask {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+/* Contact Page Hero Mask */
+.contact-hero-mask {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+/* About Page: Current Journey Mask */
 .about-journey-mask {
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-
-        transparent 10%,   /* START: image is completely invisible */
-
-        black 35%,        /* TOP FADE ENDS: image becomes fully visible here */
-
-        black 50%,        /* FULL IMAGE: image stays fully visible until here */
-
-        transparent 70%  /* BOTTOM FADE: image becomes completely invisible here */
-    );
-
-    mask-image: linear-gradient(
-        to bottom,
-
-        transparent 10%,   /* START: image is completely invisible */
-
-        black 35%,        /* TOP FADE ENDS: image becomes fully visible here */
-
-        black 50%,        /* FULL IMAGE: image stays fully visible until here */
-
-        transparent 70%  /* BOTTOM FADE: image becomes completely invisible here */
-    );
-
+    -webkit-mask-image: linear-gradient(to bottom, transparent 10%, black 35%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 10%, black 35%, black 85%, transparent 100%);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
 
-/* Dropdown Menu Transparency Override */
-#main-header .group .absolute {
-    background-color: rgba(17, 24, 39, 0.8) !important;
+/* Sizzle Reel Video Mask */
+.video-fade-mask {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 95%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 95%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
 }

@@ -7,7 +7,7 @@ const portfolioItems = [
         youtubeId: 'fuluZ9Vc26A',
         imageUrl: 'https://i.imgur.com/ML4yFnt.jpeg',
         tags: ['Adobe Illustrator', 'Adobe Premiere Pro', 'Commercial', 'Drone Footage', 'Informative', 'Short Form', 'Talking Head', 'Voiceover'],
-        description: "This project was a video I edited for a client showcasing a massive commercial roofing project at Peachy Airport Parking in Atlanta, Georgia. My role was to take the raw footage and craft a clear, compelling narrative that highlighted the client's expertise and unique solution to a severe hail damage problem. I structured the edit to tell a complete story of the initial damage, what repairs were made, and the successful outcome. The final piece features a strong testimonial, effectively building trust and demonstrating the value Restore Masters provides."
+        description: "A commercial I edited showcasing a massive roofing project at Peachy Airport Parking in Atlanta. My goal was to take the raw drone and ground footage and shape it into a clear, compelling story about how Restore Masters tackled this severe hail damage problem from start to finish."
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const portfolioItems = [
         youtubeId: 'eQVPwUhf69s',
         imageUrl: 'https://i.imgur.com/XdH6Dje.png',
         tags: ['Adobe Illustrator', 'Adobe Premiere Pro', 'Documentary', 'Interview', 'Long Form', 'Motion Graphics', 'Scriptwriting', 'Storyboarding', 'Talking Head', 'Visual Effects'],
-        description: "Here is a Documentary style video I wrote to celebrate one of my favorite video games of all time. Which showcases a variety of editing techniques to tell a story that spans over 20 years now."
+        description: "Here is a Documentary-style video I wrote to celebrate one of my favorite video games of all time. It showcases a variety of editing techniques to tell a story that spans over 20 years now."
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const portfolioItems = [
         youtubeId: 'vj73JvlAujY',
         imageUrl: 'https://i.imgur.com/Ps00pWo.png',
         tags: ['Adobe Premiere Pro', 'Informative', 'Long Form', 'Scriptwriting', 'Talking Head', 'Tutorial', 'Voiceover'],
-        description: "This video compiles together over 2 months of footage while also telling the story of how I created a 3D Printed Helmet as a gift for my friends weeding. Organization is key when working on such a large project."
+        description: "This video compiles together over 2 months of footage while also telling the story of how I created a 3D Printed Helmet as a gift for my friend's wedding. Organization is key when working on such a large project."
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const portfolioItems = [
         youtubeId: 'nrCRu7LfVbU',
         imageUrl: 'https://i.imgur.com/zVbObGy.png',
         tags: ['Adobe Premiere Pro', 'Informative', 'Long Form', 'Motion Graphics', 'Scriptwriting', 'Talking Head', 'Voiceover'],
-        description: "This is another video that shows my skills at recording unscripted and being to edit that footage in a way that creates a compelling story from start to finish about my experience with the latest Legend of Zelda game."
+        description: "This is another video that shows my skills at recording unscripted and being able to edit that footage in a way that creates a compelling story from start to finish about my experience with the latest Legend of Zelda game."
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ const portfolioItems = [
         youtubeId: 'e5vHKLWVrxQ',
         imageUrl: 'https://i.imgur.com/ZM1EaOL.png',
         tags: ['Adobe Illustrator', 'Adobe Premiere Pro', 'After Effects', 'Animation', 'Claymation', 'Motion Graphics', 'Scriptwriting', 'Stop Motion', 'Storyboarding', 'Visual Effects'],
-        description: "This video showcases my skills of using different filmmaking techniques such as stop motion animation mixed with live action footage to share a funny story from my childhood. This is also my first video to reach over 1 million views."
+        description: "This video showcases my skills of using different filmmaking techniques like stop-motion animation mixed with live-action footage to share a funny story from my childhood. This is also my first video to reach over 1 million views!"
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ const portfolioItems = [
         youtubeId: 'qj1qQZycJcM',
         imageUrl: 'https://i.imgur.com/ut5lF5H.png',
         tags: ['Adobe Premiere Pro', 'Informative', 'Long Form', 'Motion Graphics', 'Review', 'Scriptwriting', 'Storyboarding', 'Talking Head', 'Visual Effects'],
-        description: "In this video, I show my skills of reviewing one of my favorite games. For this video, I recorded all of my own footage, from the gameplay to the live action parts. I then spent over 1 month writing a storyboard with a script to edit together what you see here. I even created my own wearable wooden mask just for this video."
+        description: "In this video, I review one of my favorite games. I recorded all of my own footage from the gameplay to the live action parts, spent over a month writing a storyboard and script, and even built my own wearable wooden mask just for the video."
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ const portfolioItems = [
         localVideo: 'extra/SplatterHead.mp4',
         imageUrl: 'https://i.imgur.com/0vGZaBi.png',
         tags: ['Adobe Illustrator', 'Adobe Premiere Pro', 'After Effects', 'Animation', 'Claymation', 'Motion Graphics', 'Stop Motion', 'Storyboarding', 'Visual Effects'],
-        description: "Even though still unfinished, Splatter Head showcases my skills in storytelling with a variety of different formats such as Stop Motion and Animation. Originally created for my Premiere Pro class Final Project at Moraine but has since been used as my Finals for my Adobe Creative Suite, Website Development, and After Effects classes too."
+        description: "Even though it's still unfinished, Splatter Head showcases my skills in storytelling using stop-motion and animation. I originally created it for my Premiere Pro class Final Project, but I eventually expanded it into my finals for Website Development and After Effects too."
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ const portfolioItems = [
         youtubeId: 'cxyekweh_wQ',
         imageUrl: 'https://i.imgur.com/MBX86N1.png',
         tags: ['Adobe Premiere Pro', 'Documentary', 'Long Form', 'Scriptwriting', 'Talking Head'],
-        description: "This video showcases my ability to edit unscripted footage together to tell a story for an interesting review. It also features a variety of B-Roll, Talking Head shots, as well as Voice Overs."
+        description: "This video shows off my ability to edit unscripted footage together to tell an interesting review story. It features a good mix of B-Roll, talking head shots, and voiceovers."
     },
     {
         id: 10,
@@ -97,7 +97,7 @@ const portfolioItems = [
         youtubeId: 'k873l9PK2yw',
         imageUrl: 'https://i.imgur.com/AM3Fsmd.png',
         tags: ['Adobe Premiere Pro', 'Informative', 'Motion Graphics', 'Scriptwriting', 'Talking Head', 'Visual Effects', 'Voiceover'],
-        description: "This video shows that even almost 10 years ago now, I was able to hone my timing and pacing when it came to creating long form content. I always put the story first to keep the viewers engaged no matter what the topic is about. There are transitions, visual effects, B-Roll, gameplay footage, and everything in between to get my point across. Most of my scripted work has evolved from this style of editing throughout the years."
+        description: "Even almost 10 years ago, I loved refining my timing and pacing for long-form content. I always put the story first to keep viewers engaged. Most of my scripted work today actually evolved from this specific style of editing."
     },
     {
         id: 11,
@@ -107,7 +107,7 @@ const portfolioItems = [
         youtubeId: 'dZMKci4t8So',
         imageUrl: 'https://i.ytimg.com/vi/dZMKci4t8So/maxresdefault.jpg',
         tags: ['Adobe Premiere Pro', 'Informative', 'Long Form', 'Scriptwriting', 'Tutorial', 'Visual Effects', 'Voiceover'],
-        description: "This video shows the extensive work I put into researching any topic, even something as random as a Fishing Tutorial for the Sonic Adventures video game. The editing is tight with plenty of information being shared throughout the entire 10 minutes. With my experience, I know how to tell when every graphic, text, sound effect, clip, and footage has a reason or purpose to be in the final render or to be edited out."
+        description: "This video shows the extensive work I put into researching topics—even something as random as a fishing tutorial for Sonic Adventure! The editing is tight, making sure every graphic, text, and sound effect has a clear purpose."
     },
     {
         id: 12,
@@ -117,7 +117,7 @@ const portfolioItems = [
         youtubeId: 'piwb0cfirks',
         imageUrl: 'https://i.imgur.com/iybx3sY.png',
         tags: ['Adobe Premiere Pro', 'Informative', 'Long Form', 'Scriptwriting', 'Talking Head', 'Tutorial', 'Voiceover'],
-        description: "This video is another example of how I record footage and use that to shape together a story, such as carving a pumpkin for Halloween. Even before I hit start on the camera, I always know in my mind exactly why I'm recording a specific scene and how it will be used in the final edit."
+        description: "Another example of how I record footage to shape a story, like carving a Halloween pumpkin. Even before I hit record, I always have a plan in my head for exactly how a scene will be used in the final edit."
     },
     {
         id: 13,
@@ -127,7 +127,7 @@ const portfolioItems = [
         youtubeId: 'LJgT_2KHfx8',
         imageUrl: 'https://i.imgur.com/g0yhLTJ.png',
         tags: ['Adobe Premiere Pro', 'Informative', 'Long Form', 'Talking Head', 'UnScripted'],
-        description: "This video is an example of my skills being in front of the camera and \"reporting\" on a topic, similar to how journalists would on the News. I'm very comfortable either recording others or being recorded myself and creating content that informs the viewers about any subject. I always use relevant footage or graphics throughout my edits, even on long form content."
+        description: "This is an example of my skills in front of the camera, reporting on a topic almost like the news. I'm totally comfortable recording others or being recorded myself to inform viewers about any subject."
     },
     {
         id: 14,
@@ -137,7 +137,7 @@ const portfolioItems = [
         youtubeId: 'D-yuPDeXjYs',
         imageUrl: 'https://i.imgur.com/CHUor4B.png',
         tags: ['Adobe Premiere Pro', 'Informative', 'Long Form', 'Talking Head', 'UnScripted'],
-        description: "This video shows how passionate I can get when speaking about anything or being in front of the camera and then using my editing skills to translate that into an enjoyable video. I can easily edit any type of video, regardless of genre or topic."
+        description: "This video shows how passionate I can get when speaking about something in front of the camera, and how I use editing to translate that energy into a fun, enjoyable video."
     },
     {
         id: 15,
@@ -147,7 +147,7 @@ const portfolioItems = [
         youtubeId: 'dkA8F1uFlLc',
         imageUrl: 'https://i.imgur.com/qZOsvTQ.png',
         tags: ['Adobe Premiere Pro', 'Informative', 'Long Form', 'Review', 'Scriptwriting', 'Talking Head', 'Voiceover'],
-        description: "I recorded this video in one take, about an hour before I had to go onto an Amtrak Train. So this video showcases that I can easily work under fast paced and stressful environments too while still being able to remain on topic. Just like most of my videos, I use a huge amount of my own B-Roll and footage to enhance the video in anyway I feel is right for the edit."
+        description: "I recorded this video in one take just an hour before I had to catch an Amtrak train! It shows I can easily work under fast-paced, stressful environments while remaining totally on topic."
     },
     {
         id: 16,
@@ -157,7 +157,7 @@ const portfolioItems = [
         youtubeId: 'Mcaw7OPcs1M',
         imageUrl: 'https://i.imgur.com/VjubQVi.png',
         tags: ['Adobe Premiere Pro', 'After Effects', 'Animation', 'Short Form', 'Visual Effects'],
-        description: "This video showcases my skills using the 3D Software Blender to recreate this school assignment in my own creative way. I spent an entire week troubleshooting until I was finally able to get the video and program to work exactly how I wanted. That goes for every video I work on too, I always go above and beyond."
+        description: "This video showcases my skills using Blender to recreate a school assignment in my own creative way. I spent an entire week troubleshooting until I finally got it working exactly how I wanted. I always go above and beyond."
     },
     {
         id: 17,
@@ -167,7 +167,7 @@ const portfolioItems = [
         youtubeId: 'ZmJNjt5VtEU',
         imageUrl: 'https://i.imgur.com/jBdSoek.png',
         tags: ['Adobe Illustrator', 'Adobe Premiere Pro', 'After Effects', 'Animation', 'Motion Graphics', 'Visual Effects'],
-        description: "This video showcases my graphic design and visual effect skills. I created every movable part manually by myself in Adobe Illustrator. Afterwards, I meticulously animated each action and movement in Adobe After Effects to make this short video come to life for my school assignment. Did I have to put that much effort into a 20 second video? No, but I did because it made the final project so much better and memorable."
+        description: "I created every movable part for this character manually in Illustrator, then meticulously animated the actions in After Effects for a school project. Did I have to put that much effort into a 20-second video? No, but it made the final result so much more memorable."
     },
     {
         id: 18,
@@ -177,7 +177,7 @@ const portfolioItems = [
         youtubeId: 'Kowi_FQum2A',
         imageUrl: 'https://i.imgur.com/2GBpAnM.png',
         tags: ['Adobe Premiere Pro', 'Long Form', 'UnScripted', 'Vlog'],
-        description: "Here is an example of me recording footage as a \"vlog\" or for archival reasons. In this video, I have footage of myself creating a Halloween costume for a video game character before going to the Sonic Symphony in Downtown. This showcases my ability to record and edit extremely long form content. I record everything that I do no matter what the occasion."
+        description: "Here's an example of a more vlog-style project where I documented making a Dr. Eggman Halloween costume and attending the Sonic Symphony. I literally record everything I do, no matter the occasion."
     },
     {
         id: 19,
@@ -187,7 +187,7 @@ const portfolioItems = [
         youtubeId: 'bKs8PU376t8',
         imageUrl: '',
         tags: ['Adobe Premiere Pro', 'Scriptwriting', 'Short Form', 'Skit', 'Storyboarding'],
-        description: "The Chase Down was one of my first major video projects, where I handled nearly every aspect of production from concept to completion. The process started with writing a full storyboard and creating all the props, including hand-made cardboard weapons. I also designed the villain's outfit, filmed all the action, and then taught myself how to edit in Adobe Premiere Pro, where I created the custom muzzle flare effects to complete the scene."
+        description: "One of my very first major video projects! I handled everything from the storyboard to making the cardboard props. I filmed all the action and essentially taught myself Premiere Pro just so I could add in the custom muzzle flare effects."
     },
     {
         id: 20,
@@ -197,7 +197,7 @@ const portfolioItems = [
         youtubeId: 'mnlqmapm4-8',
         imageUrl: '',
         tags: ['Adobe Premiere Pro', 'After Effects', 'Short Form', 'Skit', 'Storyboarding'],
-        description: "This project was another of my early videos, where I focused on blending action with a comedic story. Following a detailed storyboard, I got creative with props, using a guitar as a weapon and created Raul (my handmade stunt dummy), which I made by duct taping myself and stuffing the shell with old homework. It was also a personal milestone as one of the first times I acted and spoke on camera, all tied together with intentionally cheesy special effects to enhance the humor."
+        description: "Another early video blending action with a comedic story. I got super creative with the props, using a guitar as a weapon and building a handmade stunt dummy out of duct tape and old homework. It's totally cheesy, but it was a great learning experience."
     },
     {
         id: 21,
@@ -206,7 +206,7 @@ const portfolioItems = [
         year: 2018,
         imageUrl: 'https://i.imgur.com/vvictNe.png',
         tags: ['Adobe Photoshop', 'Character Design', 'Digital Illustration', 'Wallpaper Design'],
-        description: "This highly detailed and personalized wallpaper was created as a birthday gift for my brother. The entire piece was meticulously illustrated in Adobe Photoshop over a year, totaling more than 100 hours of work. Every line and color was drawn using only a standard PC mouse, making this a significant demonstration of patience and digital illustration skill."
+        description: "I made this highly detailed wallpaper as a birthday gift for my brother. It took over a year and 100+ hours of work in Photoshop. Believe it or not, every line and color was drawn using just a standard PC mouse!"
     },
     {
         id: 22,
@@ -215,7 +215,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/hwxy67w.png',
         tags: ['Adobe Photoshop', 'Compositing', 'Digital Collage', 'Graphic Design', 'Postcard Design'],
-        description: "This Hawaiian postcard is a digital composite created in Adobe Photoshop. The project involved skillfully layering multiple source images, including the pineapple, hibiscus flowers, and beach scene. Techniques such as layer masking, color correction, and custom typography with text effects were used to blend the separate elements into a cohesive and vibrant final piece."
+        description: "I designed this Hawaiian postcard by blending together different images in Photoshop. I layered the pineapple, hibiscus flowers, and the beach, then used color correction and custom text to tie it all together into a fun, tropical vibe."
     },
     {
         id: 23,
@@ -224,7 +224,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/AcAP70k.png',
         tags: ['Adobe Illustrator', 'Adobe Photoshop', 'Double Exposure', 'Fan Art', 'Poster Design'],
-        description: "This poster, created as a final project, combines vector illustration from Illustrator with compositing techniques in Photoshop. The primary effect was achieved by using Kuzco's silhouette as a clipping mask, a technique where an object's shape masks other artwork so only areas within the shape are visible. Multiple landscape elements were then layered within the mask to build a scene with depth and narrative."
+        description: "For my final project, I wanted to play around with double exposure in Photoshop using Kuzco's silhouette. I used Illustrator to prep the vector shape, then layered in different scenes and landscapes to build out the story inside the mask."
     },
     {
         id: 24,
@@ -233,7 +233,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/BhMOsoj.png',
         tags: ['Adobe Illustrator', 'Adobe Photoshop', 'Double Exposure', 'Fan Art', 'Poster Design'],
-        description: "This is the second piece in my final project series, combining vector assets from Illustrator with Photoshop for the final composition. The main effect uses Pacha's silhouette as a clipping mask, which is an object whose shape masks other artwork so that only areas within it are visible. Various scenes and characters from the film were then layered within the silhouette to create a cohesive narrative with a distinct color palette."
+        description: "This is the second part of my double exposure series. Just like Kuzco, I used Pacha's silhouette as a clipping mask and filled it with moments from the movie to give it that warm, nostalgic feeling."
     },
     {
         id: 25,
@@ -242,7 +242,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/lNo2PrE.png',
         tags: ['Adobe Illustrator', 'Flyer Design', 'Layout', 'Typographic Design', 'Vector Illustration'],
-        description: "This flyer was created in Adobe Illustrator, focusing on the typographic design techniques. The main headlines were created using point type and styled with an envelope warp, while the body copy was imported from a text file and formatted into columns using area type. Character and paragraph formatting, including fonts, sizes, leading, and spacing, were applied throughout to establish a clear visual hierarchy and professional layout."
+        description: "A flyer I designed in Illustrator to practice typographic layouts. I had a lot of fun warping the headlines and organizing the body text to make sure the information was super easy to read while still looking professional."
     },
     {
         id: 26,
@@ -251,7 +251,7 @@ const portfolioItems = [
         year: 2013,
         imageUrl: 'https://i.imgur.com/xPw6FsV.jpeg',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
-        description: "This digital illustration of Deku Link from The Legend of Zelda: Majora's Mask was created using the unique and restrictive tools of the Nintendo Wii U Gamepad and its Miiverse application. Every line was drawn by hand on the gamepad's screen, resulting in a distinct pixel art style that reflects the limitations and charm of the platform."
+        description: "I drew Deku Link entirely by hand using just the Nintendo Wii U Gamepad for the Miiverse app! Working with those basic pixel tools was definitely a challenge, but I love how it turned out."
     },
     {
         id: 27,
@@ -260,7 +260,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/a3C9fBR.png',
         tags: ['Adobe Illustrator', 'Graphic Design', 'Invitation Design', 'Live Effects', 'Typography'],
-        description: "For this birthday party invitation, I had fun exploring Adobe Illustrator's creative effects. The text was styled by layering multiple fills and strokes in the Appearance panel to create the custom polka dot and striped patterns. To give the main \"BIRTHDAY PARTY\" text its fun, arched shape, I applied a live Warp effect, and finished the design with other effects like glows and shadows to make the elements pop."
+        description: "I went all out with Illustrator's live effects for this birthday invite. I layered strokes and fills to get those polka dot and striped patterns, then used a warp effect on the main text to give it that bouncy, fun shape."
     },
     {
         id: 28,
@@ -269,7 +269,7 @@ const portfolioItems = [
         year: 2014,
         imageUrl: 'https://i.imgur.com/CX7OW68.png',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
-        description: "This illustration, featuring rock icon Alice Cooper with the Jason Voorhees mask from Friday the 13th: Part VI, was drawn entirely by hand on a Nintendo Wii U Gamepad. Created within the restrictive pixel art environment of the Miiverse application, the piece captures a detailed likeness using only the platform's basic tools."
+        description: "A tribute to rock icon Alice Cooper wearing the Jason mask, drawn completely on the Wii U Gamepad. The Miiverse pixel tools are super restrictive, but it forced me to focus on the raw details to get his likeness right."
     },
     {
         id: 29,
@@ -278,7 +278,7 @@ const portfolioItems = [
         year: 2014,
         imageUrl: 'https://i.imgur.com/PeaDL7m.jpeg',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
-        description: "As a huge Dragon Ball fan, I really wanted to challenge myself by recreating the mighty Shenron. This was drawn entirely by hand on the Wii U Gamepad using the Miiverse app. It was a real test of patience to get all those details right with just the simple pixel tools, but I'm really happy with how the powerful look of the eternal dragon came through."
+        description: "As a huge Dragon Ball fan, I just had to try drawing Shenron on the Wii U Gamepad. It was a serious test of patience to get all those scales and details right with just black and white pixels, but the end result was totally worth it."
     },
     {
         id: 30,
@@ -287,7 +287,7 @@ const portfolioItems = [
         year: 2014,
         imageUrl: 'https://i.imgur.com/7eHNYpf.jpeg',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
-        description: "I've always loved the art style of Sailor Moon, so I wanted to see if I could capture Usagi's classic look on the Wii U. This was drawn completely by hand on the gamepad for the Miiverse app. It was a fun challenge to recreate her expressive features and iconic hairstyle using only the simple black and white pixel tools available on the platform."
+        description: "I've always loved the Sailor Moon art style, so I gave Usagi a shot on Miiverse. Capturing her iconic hair and expressions with just the basic gamepad pixel tools was a really fun challenge."
     },
     {
         id: 31,
@@ -296,7 +296,7 @@ const portfolioItems = [
         year: 2013,
         imageUrl: 'https://i.imgur.com/xJb8Yri.jpeg',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
-        description: "As a big Zelda fan, I really enjoyed tackling this piece from A Link Between Worlds. I drew this entirely by hand on the Wii U Gamepad using the Miiverse app's simple tools. It was a fun challenge to recreate the details of Link's gear, like the Master Sword and Hylian Shield, in that classic pixelated style."
+        description: "A hand-drawn Miiverse piece celebrating A Link Between Worlds. I really enjoyed recreating the Master Sword and Hylian Shield using the Wii U Gamepad's simple pixel interface."
     },
     {
         id: 32,
@@ -305,7 +305,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/5tVxUFd.png',
         tags: ['Adobe Illustrator', 'Flat Design', 'Graphic Design', 'Logo Design', 'Vector Illustration'],
-        description: "This vector logo was created in Adobe Illustrator by assembling basic shapes to form a complex scene. The bear's body was created from edited rectangles with rounded corners, while the mountains and sun were built using the Polygon and Ellipse tools."
+        description: "A clean, vector-based logo I built in Illustrator. I kept things simple, building the bear, mountains, and sun entirely out of basic shapes to give it that modern flat-design feel."
     },
     {
         id: 33,
@@ -314,7 +314,7 @@ const portfolioItems = [
         year: 2015,
         imageUrl: 'https://i.imgur.com/nyu8kdb.jpeg',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
-        description: "After finally conquering a brutal Super Mario Maker level, I felt like I needed to draw something to celebrate my victory. I was watching a lot of Dragon Ball Z at the time, so the idea to fuse Bowser with Vegeta just made perfect sense to capture that \"Over 9000\" intensity. This was a really fun piece to create entirely by hand on the Wii U Gamepad for Miiverse."
+        description: "I drew this on the Wii U Gamepad right after beating a brutal Super Mario Maker level. Fusing Bowser with Vegeta just made perfect sense to capture that 'Over 9000' level of intensity I was feeling at the time!"
     },
     {
         id: 34,
@@ -323,7 +323,7 @@ const portfolioItems = [
         year: 2015,
         imageUrl: 'https://i.imgur.com/cfqq7gw.jpeg',
         tags: ['Miiverse Art', 'Pixel Art', 'Fan Art', 'Wii U'],
-        description: "EarthBound is one of my all time favorite games, and I wanted to capture that feeling of victory and friendship from the end of the story. I drew this piece entirely by hand on the Wii U Gamepad using the Miiverse app. Getting all four heroes: Ness, Paula, Jeff, and Poo with the simple pixel art tools, especially adding the color, was a really rewarding challenge."
+        description: "EarthBound is easily one of my favorite games of all time. Getting all four heroes onto the Wii U Gamepad canvas was tough, but I wanted to capture that triumphant feeling from the end of their journey."
     },
     {
         id: 35,
@@ -332,7 +332,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/NZUpzrp.png',
         tags: ['Magazine Design', 'Cover Design', 'Typographic Design', 'Clipping Mask'],
-        description: "This magazine cover was created in Adobe Photoshop by combining multiple images and typographic elements. The main \"SKIING\" title was made by converting text into a clipping mask, allowing the mountain image to show through. All text and graphic elements were then arranged on separate layers to build a dynamic and professional layout."
+        description: "A magazine cover I threw together in Photoshop. I used a clipping mask on the 'SKIING' title so the mountain peaks pop through the text, giving it a dynamic, professional layout."
     },
     {
         id: 36,
@@ -341,7 +341,7 @@ const portfolioItems = [
         year: 2023,
         imageUrl: 'https://i.imgur.com/CtFznfv.jpeg',
         tags: ['Character Art', 'Digital Illustration', 'Drawing Tablet', 'Fan Art', 'Krita'],
-        description: "This digital illustration of Nintendo's Donkey Kong was created in Krita using a drawing tablet. The process involved building up the character from a foundational sketch, followed by clean line art and flat color application. Simple shading and highlights were then added to give the character depth and bring the energetic pose to life."
+        description: "A digital drawing of DK I did in Krita using a drawing tablet. I started with a rough sketch, added clean lines, and brought it to life with some vibrant flat colors and simple shading."
     },
     {
         id: 37,
@@ -350,7 +350,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/M6BYV16.png',
         tags: ['Adobe Illustrator', 'Graphic Design', 'Symbols', 'T Shirt Design'],
-        description: "This \"Mountain Explorer\" illustration was created in Adobe Illustrator with a focus on efficiency and time-saving techniques. Key elements like the trees and birds were converted into symbols, which allowed me to quickly populate the scene with multiple instances. This workflow is great because if I needed to change the original tree design, every copy would instantly update, saving a lot of time."
+        description: "I built this illustration in Illustrator to practice efficiency. I turned the trees and birds into symbols so I could quickly build out the forest scene—super helpful if I ever need to tweak the design later!"
     },
     {
         id: 38,
@@ -359,7 +359,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/sIcylNT.png',
         tags: ['Badge Design', 'Logo Design', 'Vector Art'],
-        description: "This logo for a cat cafe was created in Adobe Illustrator, focusing on the techniques from the basic drawing tools chapter. The Curvature tool was used to draw the smooth, clean paths for the cat's face and the circular arrows. The decorative details were finished by adding arrowheads to the arrow paths and applying the dashed line feature to create the radial pattern behind the cat."
+        description: "A cozy cat cafe logo I made using Illustrator's Curvature tool to get those super smooth lines. I finished it off with some fun dashed patterns for the background."
     },
     {
         id: 39,
@@ -368,7 +368,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/1ncjrZL.png',
         tags: ['Adobe Illustrator', 'Adobe Photoshop', 'Cover Design', 'Magazine Design'],
-        description: "This magazine cover was the final project for my \"Intro to Adobe Creative Suite\" class, designed using Adobe Photoshop and Illustrator. The composition centers on a photograph of an original character from my own stop-motion claymation film, which was layered with custom typography and graphic elements to emulate a real publication. The final file was meticulously organized with named layers and prepared with professional specifications for high-quality printing."
+        description: "My final project for an Intro to Adobe Creative Suite class. I took a photo of the main character from my claymation short film and gave it the full magazine cover treatment using Photoshop and Illustrator."
     },
     {
         id: 40,
@@ -377,7 +377,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/Sw1ChM1.png',
         tags: ['Adobe Photoshop', 'Photo Manipulation', 'Typographic Portrait'],
-        description: "This self portrait was created in Adobe Photoshop by combining a photograph with typography. To create the effect, I applied a custom layer mask shaped like my portrait to a solid text block, which reveals the letterforms that create the lights and shadows of my face. The final composition contrasts this text based half with the original photograph for a split face design."
+        description: "A self-portrait made entirely out of text in Photoshop! I used a layer mask shaped like my face over a block of text, which naturally creates all the highlights and shadows."
     },
     {
         id: 41,
@@ -386,7 +386,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/y5laGox.png',
         tags: ['Adobe Illustrator', 'Graphic Design', 'Logo Design', 'Vector Illustration'],
-        description: "I recreated the Newport Aquarium logo as a clean vector graphic in Adobe Illustrator for a class project. The goal was to produce a scalable SVG asset that could be easily imported and animated for a motion graphics assignment in Adobe After Effects."
+        description: "I recreated the Newport Aquarium logo from scratch as a crisp vector graphic in Illustrator. The goal was to prep a clean SVG file that I could easily import and animate later in After Effects."
     },
     {
         id: 42,
@@ -395,7 +395,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/TjPZS9D.png',
         tags: ['Adobe Illustrator', 'Flat Design', 'Graphic Design', 'Podcast Art', 'Vector Illustration'],
-        description: "This social ad graphic for a podcast was created in Adobe Illustrator, with a focus on transforming and arranging various vector objects into a clean composition. I used tools like the bounding box and the Properties panel to precisely scale, rotate, and position each element, like the microphone and shakers, to build the final layout."
+        description: "A clean social media ad graphic I designed in Illustrator. I focused heavily on layout and composition, making sure the microphone, shakers, and text all balanced each other out nicely."
     },
     {
         id: 43,
@@ -404,7 +404,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/LphAvXC.png',
         tags: ['Adobe Photoshop', 'Fan Art', 'Photo Manipulation', 'Postcard Design'],
-        description: "This postcard was designed by compositing multiple elements in Adobe Photoshop. The central \"SILENT HILL\" title was achieved by using the text as a clipping mask, allowing the atmospheric background image to show through the letters. Additional typographic elements and game-specific iconography were then layered and blended into the scene, with various filters and textures applied to create the final gritty, vintage postcard aesthetic."
+        description: "A gritty, vintage postcard for Silent Hill. I used a clipping mask on the title text to let the fog bleed through, then blended in some game iconography and textures in Photoshop to give it that creepy aesthetic."
     },
     {
         id: 44,
@@ -413,7 +413,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/dVqu45U.png',
         tags: ['Adobe Illustrator', 'Graphic Design', 'Vector Illustration'],
-        description: "This \"Green Energy\" illustration was created in Adobe Illustrator, with a focus on creating rich, dynamic color using gradients and blends. I used linear and radial gradients to create the smooth transitions in the sky and rolling hills. To achieve the multi color effect on the cyclist's jersey, I applied a freeform gradient, which allows for a more organic and natural blend of colors within a shape."
+        description: "I designed this in Illustrator to really push dynamic gradients and blends. I used freeform gradients on the cyclist's jersey to get that vibrant, organic mix of colors to pop against the background."
     },
     {
         id: 45,
@@ -422,7 +422,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/NT7SD1w.png',
         tags: ['Adobe Illustrator', 'Fan Art', 'Poster Design', 'Vector Illustration'],
-        description: "This poster is a complete vector recreation of art from The Legend of Zelda: The Wind Waker, created entirely in Adobe Illustrator. Each element was meticulously redrawn, one line at a time, using vector drawing tools like the Pen tool to capture the game's iconic cel-shaded art style. The final result is a clean, scalable illustration that honors the original design while showcasing precise vector pathing skills."
+        description: "A complete vector recreation of Wind Waker art, drawn line-by-line in Illustrator. Replicating the iconic cel-shaded style with the Pen tool took a lot of patience, but I love how clean and scalable it is."
     },
     {
         id: 46,
@@ -431,7 +431,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/4Zir7n5.png',
         tags: ['Adobe Photoshop', 'Compositing', 'Graphic Design', 'Layout'],
-        description: "This project involved redesigning the cover for an Adobe Photoshop textbook, created entirely within Photoshop. The central visual was developed by compositing a dramatic sunset with a silhouetted landscape to establish a strong focal point. All required typographic and branding elements were then integrated into the layout, and the final file was prepared to meet commercial printing specifications."
+        description: "A custom textbook cover I designed in Photoshop. I blended a dramatic sunset with a silhouetted landscape to make it pop, keeping all the typography clean and ready for print."
     },
     {
         id: 47,
@@ -440,7 +440,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/coTgjHY.jpeg',
         tags: ['Compositing', 'Photo Manipulation', 'Self Portrait'],
-        description: "This self portrait composite was created in Adobe Photoshop by skillfully blending two separate images. I first isolated my portrait from its original background using the Select and Mask workspace to create a precise layer mask. The portrait was then composited into the new background, with careful adjustments to color and lighting to ensure the final image was seamless and believable."
+        description: "A fun Photoshop composite where I dropped myself into an Egyptian landscape. I used the Select and Mask workspace to cut myself out cleanly, then spent time tweaking the lighting to make it look somewhat believable."
     },
     {
         id: 48,
@@ -449,7 +449,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/EcxN5QG.png',
         tags: ['Adobe Illustrator', 'Graphic Design', 'Text Art', 'Typography', 'Vector Illustration'],
-        description: "This intricate typographic portrait of an octopus was created in Adobe Illustrator using lyrics from The Beatles' song \"Octopus's Garden\" as the primary visual element. Each section of the creature was drawn as a vector shape, which was then filled with text using the Area Type tool to construct the final image. The result is a complex illustration where the song's lyrics literally form the subject."
+        description: "This one was wild—I drew an octopus in Illustrator where every single shape is filled with lyrics from The Beatles' 'Octopus's Garden'. The words literally form the creature!"
     },
     {
         id: 49,
@@ -458,7 +458,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/dlz5rtF.png',
         tags: ['Typographic Portrait', 'Text Art', 'Photo Manipulation', 'Fan Art'],
-        description: "This typographic portrait of Shrek and Donkey was created in Adobe Photoshop using the entire script from the film Shrek 2. The text was applied over a silhouette of the characters and manipulated with a Displacement Map to make the words conform to their facial features. A layer mask was then used to separate the characters from the background, resulting in a detailed image built entirely from typography."
+        description: "A portrait of Shrek and Donkey built out of the entire Shrek 2 script. I used a Displacement Map in Photoshop to warp the text around their facial features to give it 3D volume."
     },
     {
         id: 50,
@@ -467,7 +467,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/X4G2Amb.png',
         tags: ['Self Portrait', 'Poster Design', 'Graphic Design', 'Stylized Portrait'],
-        description: "This self portrait was created in Adobe Photoshop, drawing inspiration from the iconic graphic style of Shepard Fairey's \"Hope\" poster. I transformed a photograph by applying the Posterize adjustment to reduce it to a limited, high contrast color palette. The final piece merges this stylized portraiture with bold typography to create a unique James Bond themed design."
+        description: "A Shepard Fairey-inspired self-portrait. I posterized a photo of myself in Photoshop to get that high-contrast, limited color palette, then framed it up like a classic 007 poster."
     },
     {
         id: 51,
@@ -476,7 +476,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/dsSr44g.png',
         tags: ['Digital Painting', 'Fan Art', 'Character Art'],
-        description: "This digital painting of DJ Professor K was created in Adobe Photoshop, applying the principles of digital brushwork to a stylized, high energy illustration. Using custom brush settings, I created expressive, jagged line art and then layered flat colors to capture the iconic aesthetic of Jet Set Radio Future."
+        description: "A digital painting of DJ Professor K I did in Photoshop. I used some custom jagged brushes and high-energy flat colors to capture that awesome Jet Set Radio Future vibe."
     },
     {
         id: 52,
@@ -485,7 +485,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/I08MntU.png',
         tags: ['Poster Design', 'Compositing', 'Fan Art', 'Graphic Design'],
-        description: "This movie poster concept for The Legend of Zelda was created in Adobe Photoshop, integrating a self portrait to meet the project's requirements. The high contrast, graphic look was achieved using tonal adjustments to create a posterized effect, and the portrait was isolated from its original background with a layer mask. Finally, all elements like including the logo, Triforce, and castle were composited on separate layers to build the dramatic, high impact final design."
+        description: "A dramatic Legend of Zelda movie poster concept. I posterized a self-portrait, masked it out, and composited in the Triforce and Hyrule Castle to give it an epic, cinematic feel."
     },
     {
         id: 53,
@@ -494,7 +494,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/xrhRPMz.png',
         tags: ['Photo Restoration', 'Retouching', 'Colorization'],
-        description: "This project involved restoring a damaged, vintage black and white photograph and bringing it to life with color using Adobe Photoshop. I used retouching tools like the Remove tool to repair the scratch on the original image , and then applied the Colorize Neural Filter to add realistic skin tones, hair, and clothing color."
+        description: "For this project, I took a badly damaged, vintage black-and-white photo and brought it back to life in Photoshop. I repaired the scratches and used the Colorize Neural Filter to add realistic skin tones and colors."
     },
     {
         id: 54,
@@ -503,7 +503,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/O8zxdwD.png',
         tags: ['Book Cover Design', 'Graphic Design', 'Layout Design', 'Compositing'],
-        description: "This is an alternative cover design for an Adobe Photoshop textbook, created to meet commercial printing specifications. The composition is built around a dramatic background illustration, which is overlaid with a strong, angled graphic element to house the title and create a modern layout. All required typographic and branding elements were carefully positioned on separate layers to complete the professional design."
+        description: "Another textbook cover concept. I overlaid a dramatic background illustration with a sharp, angled graphic to house the title, keeping the whole layout modern and bold."
     },
     {
         id: 55,
@@ -512,7 +512,7 @@ const portfolioItems = [
         year: 2025,
         imageUrl: 'https://i.imgur.com/SYos12X.png',
         tags: ['Typographic Portrait', 'Text Art', 'Photo Manipulation', 'Fan Art'],
-        description: "This typographic portrait was created in Adobe Photoshop by using the entire script from the movie Shrek. To form the image, the text was warped to the character's features using a Displacement Map, and then isolated from the background with a layer mask."
+        description: "Similar to my Shrek 2 piece, this portrait is built from the script of the first movie, using a displacement map in Photoshop to wrap the words around his face."
     },
     {
         id: 56,
@@ -788,7 +788,7 @@ function createCard(item) {
     if (isVideo) {
         imageContainerHtml = `
             <div class="relative aspect-w-16 aspect-h-9 bg-black overflow-hidden group">
-                <img src="${displayImageUrl}" alt="${item.title} - ${item.type} project" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                <img src="${displayImageUrl}" loading="lazy" alt="${item.title} - ${item.type} project" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
                 <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     ${playIconSvg}
                 </div>
@@ -798,7 +798,7 @@ function createCard(item) {
     } else {
         imageContainerHtml = `
             <div class="relative bg-black overflow-hidden group">
-                <img src="${displayImageUrl}" alt="${item.title} - ${item.type} project" class="w-full h-auto transition-transform duration-300 group-hover:scale-110">
+                <img src="${displayImageUrl}" loading="lazy" alt="${item.title} - ${item.type} project" class="w-full h-auto transition-transform duration-300 group-hover:scale-110">
                 ${hoverDescriptionHtml}
             </div>
         `;

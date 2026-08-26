@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakub - Search Results</title>
+    
+    <!-- Fast Loading Optimizations -->
+    <link rel="preconnect" href="https://i.imgur.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://i.imgur.com">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="flex flex-col min-h-screen antialiased bg-gradient-to-b from-[#3a0a47] via-[#15041a] via-40% to-black to-60% text-gray-300 bg-no-repeat">
+<body class="flex flex-col min-h-screen antialiased bg-gradient-to-b from-[#3a0a47] via-[#15041a] via-40% to-black to-60% bg-no-repeat text-gray-300">
 
     <header id="main-header" class="bg-black/50 backdrop-blur-md fixed w-full top-0 z-50 transition-all duration-300 ease-in-out">
         <nav class="container mx-auto px-6 site-header-nav flex justify-between items-center">
             <a href="index.html" class="portfolio-title text-base sm:text-lg lg:text-xl font-bold text-white shrink-0 tracking-tight">Jakub Tilecky</a>
 
-            <!-- Desktop Nav -->
             <div class="hidden lg:flex items-center space-x-8 ml-auto">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Me</a>
@@ -58,11 +64,11 @@
         </div>
     </header>
 
-    <main class="flex-grow container mx-auto px-6 py-24 mt-[80px] bg-transparent">
-        <section>
+    <main class="flex-grow container mx-auto px-6 mt-[80px]">
+        <section class="pt-16 pb-24">
             <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Search Results</h1>
-                <p id="search-query-display" class="text-lg text-gray-400 leading-relaxed"></p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">Search Results</h1>
+                <p id="search-query-display" class="text-lg text-gray-300 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></p>
             </div>
 
             <div id="search-gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
@@ -72,20 +78,18 @@
         </section>
     </main>
 
-    <!-- Footer -->
-<footer class="bg-transparent py-12 mt-auto relative z-10">
+    <footer class="bg-transparent py-12 mt-auto relative z-10 border-t border-white/5">
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center space-x-6 text-sm font-medium">
-                <a href="index.html" class="text-gray-400 hover:text-cyan-400 transition-colors">Home</a>
-                <a href="about.html" class="text-gray-400 hover:text-cyan-400 transition-colors">About</a>
-                <a href="portfolio.html" class="text-gray-400 hover:text-cyan-400 transition-colors font-medium">Portfolio</a>
-                <a href="contact.html" class="text-gray-400 hover:text-cyan-400 transition-colors">Contact</a>
+                <a href="index.html" class="text-gray-400 hover:text-[#c084fc] transition-colors">Home</a>
+                <a href="about.html" class="text-gray-400 hover:text-[#c084fc] transition-colors">About</a>
+                <a href="portfolio.html" class="text-gray-400 hover:text-[#c084fc] transition-colors font-medium">Portfolio</a>
+                <a href="contact.html" class="text-gray-400 hover:text-[#c084fc] transition-colors">Contact</a>
             </div>
             <p class="text-gray-500 text-sm">&copy; 2026 Jakub. All Rights Reserved.</p>
         </div>
     </footer>
-	
-    <!-- Video Modal / Image Modal Containers -->
+
     <div id="item-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 z-[100] hidden">
         <div id="modal-content" class="rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto px-8 py-6 sm:p-6 relative shadow-2xl bg-[#111827] border border-white/10"></div>
     </div>
@@ -94,6 +98,6 @@
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-label="Scroll to top"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
     </button>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
