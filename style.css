@@ -162,7 +162,9 @@ button, input, textarea, .tag-btn, .nav-link, .portfolio-title {
 
 /* Dropdown Menu Transparency Override */
 #main-header .group .absolute {
-    background-color: rgba(17, 24, 39, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
 }
 
 /* =========================================================================
@@ -175,8 +177,8 @@ button, input, textarea, .tag-btn, .nav-link, .portfolio-title {
 
 /* Index Page Hero Mask */
 .index-hero-mask {
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 97%);
+    mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 97%);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
@@ -185,8 +187,8 @@ button, input, textarea, .tag-btn, .nav-link, .portfolio-title {
 
 /* About Page Hero Mask */
 .about-hero-mask {
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 97%);
+    mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 97%);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
@@ -195,8 +197,8 @@ button, input, textarea, .tag-btn, .nav-link, .portfolio-title {
 
 /* Portfolio Page Hero Mask */
 .portfolio-hero-mask {
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 100%);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
@@ -205,8 +207,8 @@ button, input, textarea, .tag-btn, .nav-link, .portfolio-title {
 
 /* Contact Page Hero Mask */
 .contact-hero-mask {
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 97%);
+    mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 97%);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
@@ -223,8 +225,8 @@ button, input, textarea, .tag-btn, .nav-link, .portfolio-title {
 
 /* Sizzle Reel Video Mask */
 .video-fade-mask {
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 95%, transparent 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
